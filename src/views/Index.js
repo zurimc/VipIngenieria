@@ -18,7 +18,6 @@ import Pagination from "./index-sections/Pagination.js";
 import Notifications from "./index-sections/Notifications.js";
 import Typography from "./index-sections/Typography.js";
 import Javascript from "./index-sections/Javascript.js";
-import Carousel from "./index-sections/Carousel.js";
 import Projects from "./index-sections/Projects";
 import CompleteExamples from "./index-sections/CompleteExamples.js";
 import SignUp from "./index-sections/SignUp.js";
