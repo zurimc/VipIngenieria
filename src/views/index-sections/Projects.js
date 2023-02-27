@@ -57,9 +57,7 @@ function Projects() {
     <>
       <div className="section" id="carousel">
         <Container>
-          <div className="title">
-            <h4>Proyectos</h4>
-          </div>
+            <h2>Proyectos</h2>
           <Row >
             <Col lg="12" md="12">
               <Carousel
