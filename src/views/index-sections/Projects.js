@@ -14,19 +14,44 @@ import {
 
 const items = [
   {
-    src: require("assets/img/bg1.jpg"),
-    altText: "Nature, United States",
-    caption: "Nature, United States"
+    src: require("assets/img/img1.jpg"),
+    altText: "Zona I",
+    caption: "Remodelación y mantenimiento"
   },
   {
-    src: require("assets/img/bg3.jpg"),
-    altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States"
+    src: require("assets/img/img3.jpg"),
+    altText: "Clínica temporal de tratamiento de COVID",
+    caption: "Proyecto"
   },
   {
-    src: require("assets/img/bg4.jpg"),
-    altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States"
+    src: require("assets/img/img4.jpg"),
+    altText: "SRE",
+    caption: "Remodelación"
+  },
+  {
+    src: require("assets/img/img.jpg"),
+    altText: "Centro Migratorio de Tijuana",
+    caption: "Remodelación"
+  },
+  {
+    src: require("assets/img/img2.jpg"),
+    altText: "Metro Zócalo",
+    caption: "Mantenimiento"
+  },
+  {
+    src: require("assets/img/img5.jpg"),
+    altText: "Centro Migratorio de Mexicali",
+    caption: "Remodelación"
+  },
+  {
+    src: require("assets/img/img6.jpg"),
+    altText: "Centro Migratorio Tenosique",
+    caption: "Remodelación"
+  },
+  {
+    src: require("assets/img/img7.jpg"),
+    altText: "CENDI 'Rosario Castellanos'",
+    caption: "Mantenimiento"
   }
 ];
 
@@ -79,6 +104,7 @@ function Projects() {
                     >
                       <img src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
+                        <h3>{item.altText}</h3>
                         <h5>{item.caption}</h5>
                       </div>
                     </CarouselItem>
