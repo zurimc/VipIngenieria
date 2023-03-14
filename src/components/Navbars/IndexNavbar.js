@@ -113,7 +113,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="landing-page"
                   onClick={(e) => {
                     e.preventDefault();
                     document
