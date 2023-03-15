@@ -2,7 +2,6 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
   Container,
   Row,
   Col
@@ -158,21 +157,20 @@ function LandingPage() {
             </Col>
             <Col lg="6" md="12">
               <div className="icons-container">
-                <i className="now-ui-icons ui-1_send"></i>
-                <i className="now-ui-icons ui-2_like"></i>
-                <i className="now-ui-icons transportation_air-baloon"></i>
+                <i className="now-ui-icons tech_laptop"></i>
+                <i className="now-ui-icons gestures_tap-01"></i>
+                <i className="now-ui-icons ui-1_calendar-60"></i>
                 <i className="now-ui-icons text_bold"></i>
-                <i className="now-ui-icons tech_headphones"></i>
-                <i className="now-ui-icons emoticons_satisfied"></i>
-                <i className="now-ui-icons shopping_cart-simple"></i>
-                <i className="now-ui-icons objects_spaceship"></i>
-                <i className="now-ui-icons media-2_note-03"></i>
-                <i className="now-ui-icons ui-2_favourite-28"></i>
-                <i className="now-ui-icons design_palette"></i>
+                <i className="now-ui-icons ui-2_settings-90"></i>
+                <i className="now-ui-icons design_app"></i>
+                <i className="now-ui-icons users_single-02"></i>
+                <i className="now-ui-icons travel_istanbul"></i>
+                <i className="now-ui-icons shopping_delivery-fas"></i>
+                <i className="now-ui-icons education_paper"></i>
+                <i className="now-ui-icons education_glasses"></i>
                 <i className="now-ui-icons clothes_tie-bow"></i>
                 <i className="now-ui-icons location_pin"></i>
-                <i className="now-ui-icons objects_key-25"></i>
-                <i className="now-ui-icons travel_istanbul"></i>
+                <i className="now-ui-icons design-2_ruler-pencil"></i>
               </div>
             </Col>
           </Row>
@@ -181,15 +179,72 @@ function LandingPage() {
         <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Servicios</h2>
-            <p className="description">Your project is very important to us.</p>
-           
+           <Row>
+            <Col lg="4" md="12">
+              <img
+                  alt="..."
+                  className="rounded-circle img-fluid img-raised"
+                  src={require("assets/img/diseño.png")}
+                ></img>
+              <h4 className="title">Diseño y Desarrollo de Proyecto Ejecutivo</h4>
+            </Col>
+            <Col lg="4" md="12">
+              <img
+                alt="..."
+                className="rounded-circle img-fluid img-raised"
+                src={require("assets/img/supervision.png")}
+              ></img>
+              <h4 className="title">Gerencia y Supervisión</h4>
+            </Col>
+            <Col lg="4" md="12">
+              <img
+                alt="..."
+                className="rounded-circle img-fluid img-raised"
+                src={require("assets/img/mantenimiento.png")}
+              ></img>
+              <h4 className="title">Construcción y Mantenimiento</h4>
+            </Col>
+           </Row>
           </Container>
         </div>
         <div className="section section-contact-us text-center">
           <Container>
-            <h2 className="title">Clientes actuales y anteriores</h2>
+            <h2 className="title">Nuestros clientes</h2>
             <p className="description">Con quiénes hemos trabajado</p>
-           
+              <Row>
+                <Col lg="3" md="12">
+                  <img
+                    alt="..."
+                    src={require("assets/img/segob.jpg")}
+                  ></img>
+                </Col>
+                <Col lg="3" md="12">
+                  <img
+                    alt="..."
+                    src={require("assets/img/sre.jpg")}
+                  ></img>
+                </Col>
+                <Col lg="3" md="12">
+                  <img
+                    alt="..."
+                    src={require("assets/img/amex.jpg")}
+                  ></img>
+                </Col>
+                <Col lg="3" md="12">
+                  <img
+                    alt="..."
+                    src={require("assets/img/inm.jpg")}
+                  ></img>
+                </Col>
+              </Row>   
+              <Row>
+              <Col lg="3" md="12">
+                <img
+                  alt="..."
+                  src={require("assets/img/secretaria.jpg")}
+                ></img>        
+              </Col>
+              </Row>      
           </Container>
         </div>
         <DefaultFooter />

@@ -60,9 +60,6 @@ function IndexNavbar() {
             >
               Vip Ingeniería
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -93,24 +90,51 @@ function IndexNavbar() {
                       .scrollIntoView();
                   }}
                 >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                  <i className="now-ui-icons business_bank"></i>
                   <p>Inicio</p>
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink
+              <UncontrolledDropdown nav>
+                <DropdownToggle
+                  caret
+                  color="default"
                   href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  nav
+                  onClick={(e) => e.preventDefault()}
                 >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                  <i className="now-ui-icons design_app mr-1"></i>
                   <p>Proyectos</p>
-                </NavLink>
-              </NavItem>
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem to="/index" tag={Link}>
+                    Centro Migratorio de Mexicali
+                  </DropdownItem>
+                  <DropdownItem
+                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
+                    target="_blank"
+                  >
+                    Centro Migratorio de Tijuana
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                  Centro Migratorio de Tenosique
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    CENDI "Rosario Castellanos"
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    Metro Zócalo
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    Zona I
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    Clínica Temporal de Tratamiento de COVID
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    Secretaría de Relaciones Exteriores
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
               <NavItem>
                 <NavLink
                   href="landing-page"
@@ -121,7 +145,7 @@ function IndexNavbar() {
                       .scrollIntoView();
                   }}
                 >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                  <i className="now-ui-icons business_bulb-63"></i>
                   <p>Quiénes somos</p>
                 </NavLink>
               </NavItem>
@@ -135,28 +159,10 @@ function IndexNavbar() {
                       .scrollIntoView();
                   }}
                 >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                  <i className="now-ui-icons travel_info"></i>
                   <p>Contacto</p>
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  href="#pablo"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app mr-1"></i>
-                  <p>Components</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Container>
