@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -14,7 +13,6 @@ import {
   NavLink,
   Nav,
   Container,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 function IndexNavbar() {
@@ -82,13 +80,8 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  to="/index" 
+                  tag={Link}
                 >
                   <i className="now-ui-icons business_bank"></i>
                   <p>Inicio</p>
@@ -137,13 +130,8 @@ function IndexNavbar() {
               </UncontrolledDropdown>
               <NavItem>
                 <NavLink
-                  href="landing-page"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  to="/landing-page" 
+                  tag={Link}
                 >
                   <i className="now-ui-icons business_bulb-63"></i>
                   <p>Quiénes somos</p>
@@ -151,7 +139,8 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  to="/index" 
+                  tag={Link}
                   onClick={(e) => {
                     e.preventDefault();
                     document
