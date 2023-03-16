@@ -82,7 +82,7 @@ function Projects() {
     <>
       <div className="section" id="carousel">
         <Container>
-            <h2>Proyectos</h2>
+            <h2>Conoce nuestros proyectos</h2>
           <Row >
             <Col lg="12" md="12">
               <Carousel

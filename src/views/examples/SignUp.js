@@ -39,12 +39,13 @@ function SignUp() {
         >
           <Container>
             <Row>
-              <Card className="card-signup" data-background-color="blue">
+              <Card className="card-signup" data-background-color="gray">
                 <Form action="" className="form" method="">
                   <CardHeader className="text-center">
                     <CardTitle className="title-up" tag="h3">
                       Contáctenos
                     </CardTitle>
+                    <h5 className="title text-justify">Póngase en contacto con VIP INGENIERÍA para conocer más sobre nuestros servicios.</h5>
                   </CardHeader>
                   <CardBody>
                     <InputGroup
@@ -88,7 +89,7 @@ function SignUp() {
                     >
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="now-ui-icons ui-1_email-85"></i>
+                          <i className="now-ui-icons tech_mobile"></i>
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
@@ -105,7 +106,7 @@ function SignUp() {
                     >
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="now-ui-icons ui-1_email-85"></i>
+                          <i className="now-ui-icons location_pin"></i>
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
@@ -122,7 +123,7 @@ function SignUp() {
                     >
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="now-ui-icons ui-1_email-85"></i>
+                          <i className="now-ui-icons files_paper"></i>
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
@@ -139,7 +140,7 @@ function SignUp() {
                     >
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="now-ui-icons ui-1_email-85"></i>
+                          <i className="now-ui-icons ui-2_chat-round"></i>
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
@@ -152,7 +153,7 @@ function SignUp() {
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
-                      className="btn-neutral btn-round"
+                      className="btn-info btn-round"
                       color="info"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}

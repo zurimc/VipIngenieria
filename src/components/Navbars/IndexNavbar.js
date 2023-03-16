@@ -103,26 +103,26 @@ function IndexNavbar() {
                     Centro Migratorio de Mexicali
                   </DropdownItem>
                   <DropdownItem
-                   to="/profile-page" tag={Link}
+                   to="/CMT" tag={Link}
                   >
                     Centro Migratorio de Tijuana
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/CMTE" tag={Link}>
                   Centro Migratorio de Tenosique
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/CENDI" tag={Link}>
                     CENDI "Rosario Castellanos"
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/Metro" tag={Link}>
                     Metro Zócalo
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/Zona" tag={Link}>
                     Zona I
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/Clinica" tag={Link}>
                     Clínica Temporal de Tratamiento de COVID
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/SRE" tag={Link}>
                     Secretaría de Relaciones Exteriores
                   </DropdownItem>
                 </DropdownMenu>

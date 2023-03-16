@@ -58,7 +58,7 @@ function ProfilePage() {
                   >
                     <NavItem>
                       <NavLink
-                        className={pills === "1" ? "active" : ""}
+                        className={pills === "" ? "" : "active"}
                         href="#pablo"
                         onClick={(e) => {
                           e.preventDefault();
@@ -79,24 +79,34 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg1.jpg")}
+                          src={require("assets/img/mexicali/1.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
+                          src={require("assets/img/mexicali/3.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/mexicali/5.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
+                          src={require("assets/img/mexicali/2.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
+                          src={require("assets/img/mexicali/4.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/mexicali/6.jpg")}
                         ></img>
                       </Col>
                     </Row>
