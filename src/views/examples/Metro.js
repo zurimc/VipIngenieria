@@ -2,6 +2,7 @@ import React from "react";
 
 // reactstrap components
 import {
+  Button,
   NavItem,
   NavLink,
   Nav,
@@ -10,6 +11,7 @@ import {
   Container,
   Row,
   Col,
+  UncontrolledTooltip
 } from "reactstrap";
 
 // core components
@@ -38,14 +40,12 @@ function ProfilePage() {
         <div className="section">
           <Container>
             <h5 className="description text-justify">
-              La Secretaría de Relaciones Exteriores a través de la Agencia
-              Mexicana de Cooperación Internacional para el Desarrollo, ha 
-              impulsado el fortalecimiento en la modernización de la infraestructura
-              y prestación de los servicios migratorios mediante el mejoramiento de la
-              Estación Migratoria de Mexicali para el cual se trabajó en el diseño de 
-              anteproyecto, desarrollo de proyecto ejecutivo y ejecución de trabajos de 
-              remodelación, con el fin de mejorar el funcionamiento  y aumentar la
-              capacidad de personas por alojar, p riorizando la seguridad de los mismos.
+            Con la iniciativa de modernización del Metro de la Ciudad de México por 
+            parte del Sistema de Transportes Colectivo Metro se realizaron trabajos 
+            de mantenimiento de pisos removiendo y sustituyendo las piezas de mármol 
+            dañas, además se realizó el reemplazo de los torniquetes de acceso por 
+            puertas retráctiles de cristal que cuentan con sensores para detectar la 
+            proximidad de personas.
             </h5>
             <Row>
               <Col className="ml-auto mr-auto" md="6">

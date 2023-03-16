@@ -2,6 +2,7 @@ import React from "react";
 
 // reactstrap components
 import {
+  Button,
   NavItem,
   NavLink,
   Nav,
@@ -10,6 +11,7 @@ import {
   Container,
   Row,
   Col,
+  UncontrolledTooltip
 } from "reactstrap";
 
 // core components
@@ -38,14 +40,13 @@ function ProfilePage() {
         <div className="section">
           <Container>
             <h5 className="description text-justify">
-              La Secretaría de Relaciones Exteriores a través de la Agencia
-              Mexicana de Cooperación Internacional para el Desarrollo, ha 
-              impulsado el fortalecimiento en la modernización de la infraestructura
-              y prestación de los servicios migratorios mediante el mejoramiento de la
-              Estación Migratoria de Mexicali para el cual se trabajó en el diseño de 
-              anteproyecto, desarrollo de proyecto ejecutivo y ejecución de trabajos de 
-              remodelación, con el fin de mejorar el funcionamiento  y aumentar la
-              capacidad de personas por alojar, p riorizando la seguridad de los mismos.
+            Se denominan Centros de Atención Temporal COVID-19 (CAT-COVID19) a los 
+            módulos provisionales habilitados durante la contingencia por SARS-CoV-2 
+            (COVID19), ubicados en estacionamientos o espacios aledaños o alternativos 
+            a un hospital de reconversión. Tienen la función de ampliar la capacidad de 
+            atención del hospital a pacientes y de permitir la diferenciación entre 
+            pacientes con sospecha o confirmados COVID-19 y de otras patologías con el 
+            fin de brindarles la mejor atención.
             </h5>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
