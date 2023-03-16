@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -161,18 +160,6 @@ function SignUp() {
               </Form>
             </Card>
           </Row>
-          <div className="col text-center">
-            <Button
-              className="btn-round btn-white"
-              color="dark"
-              to="/login-page"
-              outline
-              size="lg"
-              tag={Link}
-            >
-              View Login Page
-            </Button>
-          </div>
         </Container>
       </div>
     </>

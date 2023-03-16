@@ -19,7 +19,7 @@ import {
 
 // core components
 
-function SignUp() {
+function ContactUs() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
@@ -156,4 +156,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default ContactUs;

@@ -6,7 +6,6 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 // sections for this page
 import Images from "./index-sections/Images.js";
 import Projects from "./index-sections/Projects";
-import SignUp from "./index-sections/SignUp.js";
 
 function Index() {
   React.useEffect(() => {
@@ -28,7 +27,6 @@ function Index() {
         <div className="main">
           <Images />
           <Projects/>
-          <SignUp />
         </div>
         <DarkFooter />
       </div>

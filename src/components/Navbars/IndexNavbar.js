@@ -52,7 +52,7 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
+              href="#"
               target="_blank"
               id="navbar-brand"
             >
@@ -99,12 +99,11 @@ function IndexNavbar() {
                   <p>Proyectos</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/profile-page" tag={Link}>
                     Centro Migratorio de Mexicali
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
+                   to="/profile-page" tag={Link}
                   >
                     Centro Migratorio de Tijuana
                   </DropdownItem>
@@ -139,14 +138,8 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  to="/index" 
-                  tag={Link}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("signup-section")
-                      .scrollIntoView();
-                  }}
+                   to="/sign-up" 
+                   tag={Link}
                 >
                   <i className="now-ui-icons travel_info"></i>
                   <p>Contacto</p>

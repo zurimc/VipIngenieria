@@ -5182,7 +5182,7 @@ img {
 
 .card {
   border: 0;
-  border-radius: 0.1875rem;
+  border-radius: 0.2rem;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -5206,13 +5206,13 @@ img {
   background-color: #f96332;
 }
 .card[data-background-color="red"] {
-  background-color: #ff3636;
+  background-color: #fff;
 }
 .card[data-background-color="yellow"] {
   background-color: #ffb236;
 }
 .card[data-background-color="blue"] {
-  background-color: #2ca8ff;
+  background-color: #c1dff5;
 }
 .card[data-background-color="green"] {
   background-color: #15b60d;
@@ -5233,7 +5233,7 @@ img {
 }
 
 .card-signup {
-  max-width: 350px;
+  max-width: 650px;
   margin: 0 auto;
 }
 .card-signup .card-header {
