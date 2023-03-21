@@ -34,11 +34,7 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand">
-            <img
-              alt="..."
-              className="n-logo"
-              src={require("assets/img/logov.png")}
-            ></img>
+          
             <h1 className="h1-seo">Vip Ingeniería.</h1>
             <h3>Construya con VIP INGENIERÍA</h3>
           </div>

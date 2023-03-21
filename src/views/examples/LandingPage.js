@@ -218,6 +218,7 @@ function LandingPage() {
                 </Col>
                 <Col lg="3" md="12">
                   <img
+                    style={{marginTop: "-50px"}}
                     alt="..."
                     src={require("assets/img/sre.jpg")}
                   ></img>
@@ -225,6 +226,7 @@ function LandingPage() {
                 <Col lg="3" md="12">
                   <img
                     alt="..."
+                    style={{marginTop: "20px"}}
                     src={require("assets/img/amex.jpg")}
                   ></img>
                 </Col>
