@@ -21,7 +21,7 @@ function Images() {
               <div className="hero-images-container-1">
                 <img
                   alt="..."
-                  src={require("assets/img/p2.png")}
+                  src={require("assets/img/edificio3.png")}
                 ></img>
               </div>
               <div className="hero-images-container-2">

@@ -13,7 +13,6 @@ import {
 } from "reactstrap";
 
 // core components
-import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
@@ -34,7 +33,24 @@ function ProfilePage() {
     <>
       <IndexNavbar />
       <div className="wrapper">
-        <ProfilePageHeader />
+      <div
+        className="page-header clear-filter page-header-small"
+        filter-color="blue"
+      >
+        <div
+          className="page-header-image"
+          style={{
+            backgroundImage: "url(" + require("assets/img/somos3.jpg") + ")"
+          }}
+        ></div>
+        <Container>
+          <div className="photo-container">
+            <img alt="..." src={require("assets/img/bg3.jpg")}></img>
+          </div>
+          <h3 className="title">PROYECTOS GUBERNAMENTALES</h3>
+        
+        </Container>
+      </div>
         <div className="section">
           <Container>
             <h5 className="description text-justify">
@@ -49,7 +65,7 @@ function ProfilePage() {
             </h5>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
-                <h4 className="title text-center">Remodelación</h4>
+                <h4 className="title text-center">Remodelaciones</h4>
                 <div className="nav-align-center">
                   <Nav
                     className="nav-pills-info nav-pills-just-icons"
@@ -58,11 +74,35 @@ function ProfilePage() {
                   >
                     <NavItem>
                       <NavLink
-                        className={pills === "" ? "" : "active"}
+                        className={pills === "1" ? "active" : ""}
                         href="#pablo"
                         onClick={(e) => {
                           e.preventDefault();
                           setPills("1");
+                        }}
+                      >
+                        <i className="now-ui-icons design_image"></i>
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={pills === "2" ? "active" : ""}
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setPills("2");
+                        }}
+                      >
+                        <i className="now-ui-icons design_image"></i>
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={pills === "3" ? "active" : ""}
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setPills("3");
                         }}
                       >
                         <i className="now-ui-icons design_image"></i>
@@ -79,34 +119,24 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/mexicali/1.jpg")}
+                          src={require("assets/img/bg1.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/mexicali/3.jpg")}
-                        ></img>
-                         <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/mexicali/5.jpg")}
+                          src={require("assets/img/bg3.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/mexicali/2.jpg")}
+                          src={require("assets/img/bg8.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/mexicali/4.jpg")}
-                        ></img>
-                         <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/mexicali/6.jpg")}
+                          src={require("assets/img/bg7.jpg")}
                         ></img>
                       </Col>
                     </Row>

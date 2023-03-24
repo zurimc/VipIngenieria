@@ -100,30 +100,15 @@ function IndexNavbar() {
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to="/profile-page" tag={Link}>
-                    Centro Migratorio de Mexicali
+                    Gubernamental
                   </DropdownItem>
                   <DropdownItem
                    to="/CMT" tag={Link}
                   >
-                    Centro Migratorio de Tijuana
+                    Privado
                   </DropdownItem>
                   <DropdownItem to="/CMTE" tag={Link}>
-                  Centro Migratorio de Tenosique
-                  </DropdownItem>
-                  <DropdownItem to="/CENDI" tag={Link}>
-                    CENDI "Rosario Castellanos"
-                  </DropdownItem>
-                  <DropdownItem to="/Metro" tag={Link}>
-                    Metro Zócalo
-                  </DropdownItem>
-                  <DropdownItem to="/Zona" tag={Link}>
-                    Zona I
-                  </DropdownItem>
-                  <DropdownItem to="/Clinica" tag={Link}>
-                    Clínica Temporal de Tratamiento de COVID
-                  </DropdownItem>
-                  <DropdownItem to="/SRE" tag={Link}>
-                    Secretaría de Relaciones Exteriores
+                  Financiero
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
