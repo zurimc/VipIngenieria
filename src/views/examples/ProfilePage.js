@@ -33,23 +33,23 @@ function ProfilePage() {
     <>
       <IndexNavbar />
       <div className="wrapper">
-      <div
-        className="page-header clear-filter page-header-small"
-        filter-color="blue"
-      >
         <div
-          className="page-header-image"
-          style={{
-            backgroundImage: "url(" + require("assets/img/somos3.jpg") + ")"
-          }}
-        ></div>
-        <Container>
-          <div className="photo-container">
-            <img alt="..." src={require("assets/img/bg3.jpg")}></img>
-          </div>
-          <h3 className="title">PROYECTOS GUBERNAMENTALES</h3>
-        
-        </Container>
+          className="page-header clear-filter page-header-small"
+          filter-color="blue"
+        >
+          <div
+            className="page-header-image"
+            style={{
+              backgroundImage: "url(" + require("assets/img/somos3.jpg") + ")"
+            }}
+          ></div>
+          <Container>
+            <div className="photo-container">
+              <img alt="..." src={require("assets/img/bg3.jpg")}></img>
+            </div>
+            <h3 className="title">PROYECTOS GUBERNAMENTALES</h3>
+          
+          </Container>
       </div>
         <div className="section">
           <Container>
@@ -63,6 +63,13 @@ function ProfilePage() {
               remodelación, con el fin de mejorar el funcionamiento  y aumentar la
               capacidad de personas por alojar, p riorizando la seguridad de los mismos.
             </h5>
+            <ul className="description text-justify">
+              <li >Centro migratorio de Mexicali.</li>
+              <li >Centro migratorio de Tijuana.</li>
+              <li >Centro migratorio de Tenosique.</li>
+              <li >Metro Zócalo.</li>
+              <li >Secretaría de Relaciones Exteriores.</li>
+            </ul>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
                 <h4 className="title text-center">Remodelaciones</h4>
@@ -108,6 +115,30 @@ function ProfilePage() {
                         <i className="now-ui-icons design_image"></i>
                       </NavLink>
                     </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={pills === "4" ? "active" : ""}
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setPills("4");
+                        }}
+                      >
+                        <i className="now-ui-icons design_image"></i>
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={pills === "5" ? "active" : ""}
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setPills("5");
+                        }}
+                      >
+                        <i className="now-ui-icons design_image"></i>
+                      </NavLink>
+                    </NavItem>
                   </Nav>
                 </div>
               </Col>
@@ -119,24 +150,34 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg1.jpg")}
+                          src={require("assets/img/VIP/mexicali/1.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
+                          src={require("assets/img/VIP/mexicali/2.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/mexicali/5.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
+                          src={require("assets/img/VIP/mexicali/3.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
+                          src={require("assets/img/VIP/mexicali/4.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/mexicali/6.jpg")}
                         ></img>
                       </Col>
                     </Row>
@@ -149,7 +190,7 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg6.jpg")}
+                          src={require("assets/img/VIP/CENDI/1.jpg")}
                         ></img>
                         <img
                           alt="..."

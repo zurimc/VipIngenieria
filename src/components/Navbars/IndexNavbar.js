@@ -108,7 +108,7 @@ function IndexNavbar() {
                     Privado
                   </DropdownItem>
                   <DropdownItem to="/CMTE" tag={Link}>
-                  Financiero
+                  Sector Salud
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
