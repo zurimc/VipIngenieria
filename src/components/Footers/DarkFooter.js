@@ -12,35 +12,47 @@ function DarkFooter() {
           <Row className="collections">
             <Col md="4">
               Redes sociales
-              <Button
-                className="btn-icon btn-round"
-                color="info"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="fab fa-facebook-square"></i>
-              </Button>
-              <Button
-                className="btn-icon btn-round"
-                color="info"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <Button
-                className="btn-icon btn-round"
-                color="info"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="fab fa-google-plus"></i>
-              </Button>
+              <ul>
+                <li>
+                  <Button
+                    className="btn-icon btn-round"
+                    color="info"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                    >
+                    <i className="fab fa-facebook-square"></i>
+                  </Button>
+                </li>
+              </ul>
+             <ul>
+              <li>
+                <Button
+                  className="btn-icon btn-round"
+                  color="info"
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <i className="fab fa-twitter"></i>
+                </Button>
+              </li>
+             </ul>
+             <ul>
+              <li>
+                <Button
+                  className="btn-icon btn-round"
+                  color="info"
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <i className="fab fa-google-plus"></i>
+                </Button>
+              </li>
+             </ul>
             </Col>
             <Col md="4">
               Contacto
               <p>
-              Mercaderes No. 20, piso 5, Col. San José Insurgentes, Benito Juárez, C.P. 03900, CDMX.
+                Calz. De Becerra 70, Tacubaya, Miguel Hidalgo, 11870 Ciudad de México, CDMX
               </p>
               <p>
               vip.obra@gmail.com

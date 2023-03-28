@@ -103,11 +103,11 @@ function IndexNavbar() {
                     Gubernamental
                   </DropdownItem>
                   <DropdownItem
-                   to="/CMT" tag={Link}
+                   to="/private-page" tag={Link}
                   >
                     Privado
                   </DropdownItem>
-                  <DropdownItem to="/CMTE" tag={Link}>
+                  <DropdownItem to="/hospital" tag={Link}>
                   Sector Salud
                   </DropdownItem>
                 </DropdownMenu>

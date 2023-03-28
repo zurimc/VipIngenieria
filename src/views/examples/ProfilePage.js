@@ -61,7 +61,7 @@ function ProfilePage() {
               Estación Migratoria de Mexicali para el cual se trabajó en el diseño de 
               anteproyecto, desarrollo de proyecto ejecutivo y ejecución de trabajos de 
               remodelación, con el fin de mejorar el funcionamiento  y aumentar la
-              capacidad de personas por alojar, p riorizando la seguridad de los mismos.
+              capacidad de personas por alojar, priorizando la seguridad de los mismos.
             </h5>
             <ul className="description text-justify">
               <li >Centro migratorio de Mexicali.</li>
@@ -195,19 +195,34 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg11.jpg")}
+                          src={require("assets/img/VIP/CENDI/4.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/CENDI/5.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
+                          src={require("assets/img/VIP/CENDI/2.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
+                          src={require("assets/img/VIP/CENDI/3.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/CENDI/6.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/CENDI/7.jpg")}
                         ></img>
                       </Col>
                     </Row>
@@ -220,25 +235,101 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
+                          src={require("assets/img/VIP/Tenosique/1.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
+                          src={require("assets/img/VIP/Tenosique/2.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/Tenosique/3.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
+                          src={require("assets/img/VIP/Tenosique/4.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg6.jpg")}
+                          src={require("assets/img/VIP/Tenosique/5.jpg")}
                         ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/Tenosique/6.jpg")}
+                        ></img>
+                      </Col>
+                    </Row>
+                  </Col>
+                </TabPane>
+                <TabPane tabId="pills4">
+                  <Col className="ml-auto mr-auto" md="10">
+                    <Row className="collections">
+                      <Col md="6">
+                        <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/Tijuana/1.jpg")}
+                        ></img>
+                        <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/Tijuana/2.jpg")}
+                        ></img>
+                      </Col>
+                      <Col md="6">
+                        <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/Tijuana/3.jpg")}
+                        ></img>
+                        <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/Tijuana/4.jpg")}
+                        ></img>
+                      </Col>
+                    </Row>
+                  </Col>
+                </TabPane>
+                <TabPane tabId="pills5">
+                  <Col className="ml-auto mr-auto" md="10">
+                    <Row className="collections">
+                      <Col md="6">
+                        <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/metro/1.jpg")}
+                        ></img>
+                        <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/metro/2.jpg")}
+                        ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/metro/3.jpg")}
+                        ></img>
+                      </Col>
+                      <Col md="6">
+                        <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/metro/4.jpg")}
+                        ></img>
+                        <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/metro/5.jpg")}
+                        ></img>
+                      
                       </Col>
                     </Row>
                   </Col>

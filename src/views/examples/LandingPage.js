@@ -128,28 +128,28 @@ function LandingPage() {
           <Row>
             <Col lg="6" md="12">
               <h2 className="title">Valores</h2>
-              <h5 className="description">
+              <h5 className="category text-info">
                Profesionalismo:
               </h5>
-              <p>Contamos con un equipo de especialistas calificado para desarrrollar
+              <p className="description">Contamos con un equipo de especialistas calificado para desarrrollar
                 de la mejor manera, todo tipo de proyectos.
               </p>
-              <h5 className="description">
+              <h5 className="category text-info">
                Compromiso:
               </h5>
-              <p>Garantizamos siempre los mejores resultados en el desarrollo de nuestros 
+              <p className="description">Garantizamos siempre los mejores resultados en el desarrollo de nuestros 
                 trabajos.
               </p>
-              <h5 className="description">
+              <h5 className="category text-info">
                Honestidad:
               </h5>
-              <p>Transmitimos confianza a nuestros clientes y colaboradores basándonos
+              <p className="description">Transmitimos confianza a nuestros clientes y colaboradores basándonos
                 siempre en la integridad y honradez en nuestro ámbito profesional.
               </p>
-              <h5 className="description">
+              <h5 className="category text-info">
                Calidad:
               </h5>
-              <p>Gracias a nuestro equipo de especialistas y a la gran experiencia que tiene
+              <p className="description">Gracias a nuestro equipo de especialistas y a la gran experiencia que tiene
                 la empresa, grantizamos la mejor calidad en todos nuestros servicios.
               </p>
             </Col>
@@ -174,79 +174,7 @@ function LandingPage() {
           </Row>
         </Container>
         </div>
-        <div className="section section-contact-us text-center">
-          <Container>
-            <h2 className="title">Servicios</h2>
-           <Row>
-            <Col lg="4" md="12">
-              <img
-                  alt="..."
-                  className="rounded-circle img-fluid img-raised"
-                  src={require("assets/img/diseño.png")}
-                ></img>
-              <h4 className="title">Diseño y Desarrollo de Proyecto Ejecutivo</h4>
-            </Col>
-            <Col lg="4" md="12">
-              <img
-                alt="..."
-                className="rounded-circle img-fluid img-raised"
-                src={require("assets/img/supervision.png")}
-              ></img>
-              <h4 className="title">Gerencia y Supervisión</h4>
-            </Col>
-            <Col lg="4" md="12">
-              <img
-                alt="..."
-                className="rounded-circle img-fluid img-raised"
-                src={require("assets/img/mantenimiento.png")}
-              ></img>
-              <h4 className="title">Construcción y Mantenimiento</h4>
-            </Col>
-           </Row>
-          </Container>
-        </div>
-        <div className="section section-contact-us text-center">
-          <Container>
-            <h2 className="title">Nuestros clientes</h2>
-            <p className="description">Con quiénes hemos trabajado</p>
-              <Row>
-                <Col lg="3" md="12">
-                  <img
-                    alt="..."
-                    src={require("assets/img/segob.jpg")}
-                  ></img>
-                </Col>
-                <Col lg="3" md="12">
-                  <img
-                    style={{marginTop: "-50px"}}
-                    alt="..."
-                    src={require("assets/img/sre.jpg")}
-                  ></img>
-                </Col>
-                <Col lg="3" md="12">
-                  <img
-                    alt="..."
-                    style={{marginTop: "20px"}}
-                    src={require("assets/img/amex.jpg")}
-                  ></img>
-                </Col>
-                <Col lg="3" md="12">
-                  <img
-                    alt="..."
-                    src={require("assets/img/inm.jpg")}
-                  ></img>
-                </Col>
-              </Row>   
-              <Row>
-              <Col lg="3" md="12">
-                <img
-                  alt="..."
-                  src={require("assets/img/secretaria.jpg")}
-                ></img>        
-              </Col>
-              </Row>      
-          </Container>
-        </div>
+      
         <DarkFooter />
       </div>
     </>

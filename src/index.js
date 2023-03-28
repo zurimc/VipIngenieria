@@ -11,6 +11,8 @@ import "assets/demo/nucleo-icons-page-styles.css?v=1.5.0";
 import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import PrivateIndustry from "views/examples/PrivateIndustry.js";
+import Hospital from "views/examples/Hospitals.js";
 import SignUp from "views/examples/SignUp.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -28,7 +30,14 @@ root.render(
           path="/profile-page"
           render={(props) => <ProfilePage {...props} />}
         />
-              
+         <Route
+          path="/private-page"
+          render={(props) => <PrivateIndustry {...props} />}
+        />
+         <Route
+          path="/hospital"
+          render={(props) => <Hospital {...props} />}
+        />    
          <Route
           path="/sign-up"
           render={(props) => <SignUp {...props} />}
