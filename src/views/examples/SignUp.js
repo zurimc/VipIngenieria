@@ -24,6 +24,8 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 function SignUp() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
+  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [collapseOpen, setCollapseOpen] = React.useState(false);
 
   let pageHeader = React.createRef();
 
@@ -39,6 +41,15 @@ function SignUp() {
         window.removeEventListener("scroll", updateScroll);
       };
     }
+    document.body.classList.add("landing-page");
+    document.body.classList.add("sidebar-collapse");
+    document.documentElement.classList.remove("nav-open");
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+    return function cleanup() {
+      document.body.classList.remove("landing-page");
+      document.body.classList.remove("sidebar-collapse");
+    };
   });
   return (
     <>

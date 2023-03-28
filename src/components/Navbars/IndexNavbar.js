@@ -52,8 +52,8 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="#"
-              target="_blank"
+               to="/index" 
+               tag={Link}
               id="navbar-brand"
             >
               Vip Ingeniería
