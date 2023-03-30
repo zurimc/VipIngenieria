@@ -22,7 +22,7 @@ const Map = ReactMapboxGl({
 });
 
 // NOTE Componente que renderiza el mapa
-export const Maps = ({ width="750px", height="130vh", zoom=4, marcadores=[], 
+export const Maps = ({ width="650px", height="88vh", zoom=4, marcadores=[], 
   limites=[
     [-195.42280614436245, -23.55835417986378], // Southwest coordinates
     [-88.2353081734933, 35.60871407769408] // Northeast coordinates
