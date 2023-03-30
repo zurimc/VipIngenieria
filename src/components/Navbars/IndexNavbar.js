@@ -123,7 +123,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                   to="/sign-up" 
+                   to="/contact-us" 
                    tag={Link}
                 >
                   <i className="now-ui-icons travel_info"></i>

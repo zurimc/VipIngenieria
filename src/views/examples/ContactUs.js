@@ -21,11 +21,9 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-function SignUp() {
+function ContactUs() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [collapseOpen, setCollapseOpen] = React.useState(false);
 
   let pageHeader = React.createRef();
 
@@ -208,4 +206,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default ContactUs;

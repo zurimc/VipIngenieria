@@ -13,7 +13,7 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import PrivateIndustry from "views/examples/PrivateIndustry.js";
 import Hospital from "views/examples/Hospitals.js";
-import SignUp from "views/examples/SignUp.js";
+import ContactUs from "views/examples/ContactUs.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -39,8 +39,8 @@ root.render(
           render={(props) => <Hospital {...props} />}
         />    
          <Route
-          path="/sign-up"
-          render={(props) => <SignUp {...props} />}
+          path="/contact-us"
+          render={(props) => <ContactUs {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
