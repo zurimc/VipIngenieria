@@ -20,6 +20,8 @@ import {
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
+//importar mapa
+import {Maps} from "components/Maps/index.js"
 
 function ContactUs() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -28,6 +30,7 @@ function ContactUs() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
+    //Efecto del scroll cuando baja el navbar cambia de color.
     if (window.innerWidth > 991) {
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3;
@@ -39,6 +42,7 @@ function ContactUs() {
         window.removeEventListener("scroll", updateScroll);
       };
     }
+    //Menu de hamburguesa cuando la pagina cambia de resolucion aparece el menu.
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -49,6 +53,27 @@ function ContactUs() {
       document.body.classList.remove("sidebar-collapse");
     };
   });
+
+  const offices = [
+    {
+      ubi: [-99.18724973305474, 19.396930263392687],
+      title: "OFICINA CENTRAL CDMX",
+      description: "Teléfono: +52 55 5611 8558",
+      img: ""
+    },
+    {
+      ubi: [-100.38322180713631, 25.664657650573528],
+      title: "OFICINA MONTERREY",
+      description: "Teléfono: +81 8335-9208",
+      img: ""
+    }, 
+    {
+      ubi: [-77.03383918520282, -12.093024786961486],
+      title: "OFICINA LIMA PERÚ",
+      description: "Teléfono: +51 1719 2079",
+      img: ""
+    }
+  ];
   return (
     <>
     <IndexNavbar />
@@ -68,6 +93,7 @@ function ContactUs() {
             <Row>
               <Col lg="6" md="12">
                 <Card className="card-signup" data-background-color="gray">
+
                   <Form action="" className="form" method="">
                     <CardHeader className="text-center">
                       <CardTitle className="title-up" tag="h3">
@@ -193,8 +219,8 @@ function ContactUs() {
                   </Form>
                 </Card>
               </Col>
-              <Col lg="6" md="12">
-              
+              <Col lg="4" md="6">
+                <Card> <Maps marcadores={offices} /></Card>
               </Col>
             </Row>
           </Container>
