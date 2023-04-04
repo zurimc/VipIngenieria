@@ -12,7 +12,7 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-function LandingPage() {
+function AboutUs() {
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -181,4 +181,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default AboutUs;

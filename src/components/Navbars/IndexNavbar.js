@@ -99,7 +99,7 @@ function IndexNavbar() {
                   <p>Proyectos</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/profile-page" tag={Link}>
+                  <DropdownItem to="/projects-page" tag={Link}>
                     Gubernamental
                   </DropdownItem>
                   <DropdownItem
@@ -114,7 +114,7 @@ function IndexNavbar() {
               </UncontrolledDropdown>
               <NavItem>
                 <NavLink
-                  to="/landing-page" 
+                  to="/aboutUs-page" 
                   tag={Link}
                 >
                   <i className="now-ui-icons business_bulb-63"></i>
