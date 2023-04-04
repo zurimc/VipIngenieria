@@ -16,7 +16,8 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-function ProfilePage() {
+function PrivateIndustry() {
+  //menu de hamburguesa cuando se cambia la resolucion
   const [pills, setPills] = React.useState("2");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -202,4 +203,4 @@ function ProfilePage() {
   );
 }
 
-export default ProfilePage;
+export default PrivateIndustry;

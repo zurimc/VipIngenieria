@@ -16,7 +16,8 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-function ProfilePage() {
+function Hospital() {
+  //menu de hamburguesa cuando la resolucio cambia.
   const [pills, setPills] = React.useState("2");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -113,4 +114,4 @@ function ProfilePage() {
   );
 }
 
-export default ProfilePage;
+export default Hospital;

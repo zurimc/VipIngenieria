@@ -1,5 +1,4 @@
 import React from "react";
-
 // reactstrap components
 import {
   NavItem,
@@ -16,7 +15,8 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-function ProfilePage() {
+function Projects() {
+  //Menu de hamburguesa cuando la resolucion cambia
   const [pills, setPills] = React.useState("2");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -63,13 +63,15 @@ function ProfilePage() {
               remodelación, con el fin de mejorar el funcionamiento  y aumentar la
               capacidad de personas por alojar, priorizando la seguridad de los mismos.
             </h5>
-            <ul className="description text-justify">
-              <li >Centro migratorio de Mexicali.</li>
-              <li >Centro migratorio de Tijuana.</li>
-              <li >Centro migratorio de Tenosique.</li>
-              <li >Metro Zócalo.</li>
-              <li >Secretaría de Relaciones Exteriores.</li>
-            </ul>
+            <Container >
+              <ul className="description text-justify" >
+                <li>Centro migratorio de Mexicali.</li>
+                <li >Centro migratorio de Tijuana.</li>
+                <li >Centro migratorio de Tenosique.</li>
+                <li >Metro Zócalo.</li>
+                <li >Secretaría de Relaciones Exteriores.</li>
+              </ul>
+            </Container>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
                 <h4 className="title text-center">Remodelaciones</h4>
@@ -344,4 +346,4 @@ function ProfilePage() {
   );
 }
 
-export default ProfilePage;
+export default Projects;

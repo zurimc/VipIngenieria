@@ -53,7 +53,7 @@ function ContactUs() {
       document.body.classList.remove("sidebar-collapse");
     };
   });
-
+//Pins de las oficinas en el mapa importado.
   const offices = [
     {
       ubi: [-99.18724973305474, 19.396930263392687],

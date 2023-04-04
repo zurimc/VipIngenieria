@@ -13,6 +13,7 @@ import Images from "./index-sections/Images.js";
 import Projects from "./index-sections/Projects";
 
 function Index() {
+  //Menu de hamburgesa cuando la resolucion cambia.
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -32,7 +33,7 @@ function Index() {
         <div className="main">
           <Images />
           <Projects/>
-          <div className="section section-contact-us text-center">
+          <div className=" text-center">
           <Container>
             <h2 className="title">Servicios</h2>
            <Row>
