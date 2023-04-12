@@ -48,27 +48,25 @@ function Hospital() {
             <div className="photo-container">
               <img alt="..." src={require("assets/img/bg3.jpg")}></img>
             </div>
-            <h3 className="title">PROYECTOS SECTOR SALUD</h3>
+            <h3 className="title">PROYECTOS 2021</h3>
           
           </Container>
       </div>
         <div className="section">
           <Container>
-            <h5 className="description text-justify">
-            Se denominan Centros de Atención Temporal COVID-19 (CAT-COVID19) a 
-            los módulos provisionales habilitados durante la contingencia por 
-            SARS-CoV-2 (COVID19), ubicados en estacionamientos o espacios aledaños 
-            o alternativos a un hospital de reconversión. Tienen la función de 
-            ampliar la capacidad de atención del hospital a pacientes y de permitir 
-            la diferenciación entre pacientes con sospecha o confirmados COVID-19 y 
-            de otras patologías con el fin de brindarles la mejor atención.
-            </h5>
-            <ul className="description text-justify">
-              <li >Clinica temporal de tratamiento de COVID.</li>
-            </ul>
             <Row>
+            <h1 className="text-center">Centro de Atención Temporal COVID-19</h1>
+                      <h5 className="description text-justify">
+                        Se denomina Centros de Atención Temporal COVID-19 (CAT-COVID19)
+                        a los módulos provisionales habilitados durante la contigencia por 
+                        SARS-CoV-2 (COVID19), ubicados en estacionamientos, espacios aledaños o alternativos a un hospital de reconversión. 
+                        Tienen la función de ampliar la capacidad de atención del hospital a
+                        pacientes y de permitir la diferenciación entre pacietes con sospecha
+                        y confirmados COVID-19 de otras patologías, con el fin de brindarles la mejor
+                        atención.
+                      </h5>
               <Col className="ml-auto mr-auto" md="6">
-                <h4 className="title text-center">Remodelaciones</h4>
+                <h4 className="title text-center">Galeria de Proyectos</h4>
                 <div className="nav-align-center">
                   <Nav
                     className="nav-pills-info nav-pills-just-icons"

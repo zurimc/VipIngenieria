@@ -100,15 +100,15 @@ function IndexNavbar() {
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to="/projects-page" tag={Link}>
-                    Gubernamental
+                    2019
                   </DropdownItem>
                   <DropdownItem
                    to="/private-page" tag={Link}
                   >
-                    Privado
+                    2020
                   </DropdownItem>
                   <DropdownItem to="/hospital" tag={Link}>
-                  Sector Salud
+                  2021
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
