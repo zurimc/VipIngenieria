@@ -31,7 +31,15 @@ root.render(
           render={(props) => <Projects {...props} />}
         />
          <Route
-          path="/private-page"
+          path="/private-page/1"
+          render={(props) => <PrivateIndustry {...props} />}
+        />
+        <Route
+          path="/private-page/2"
+          render={(props) => <PrivateIndustry {...props} />}
+        />
+        <Route
+          path="/private-page/3"
           render={(props) => <PrivateIndustry {...props} />}
         />
          <Route

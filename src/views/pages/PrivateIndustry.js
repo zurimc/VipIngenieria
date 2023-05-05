@@ -16,7 +16,37 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
+const ProjectsData = [
+  {
+    Id: "1",
+    title: "Centro de Atención Temporal COVID-19",
+    client: "SRE/INM",
+    typeProject: "Anteproyecto arquitectónico",
+    location: "Ciudad de México"
+  
+},
+{
+  Id: "2",
+  title: "Oficinas de Representaciòn INM Quintana Roo",
+  client: "INM",
+  typeProject: "Mantenimiento preventivo y correctivo",
+  location: "Quintana Roo"
+
+},
+{
+  Id: "3",
+  title: "Oficinas de Representaciòn INM Yucatán",
+  client: "INM",
+  typeProject: "Mantenimiento preventivo y correctivo",
+  location: "Yucatàn"
+
+},
+]
+
 function PrivateIndustry() {
+
+
+
   //menu de hamburguesa cuando se cambia la resolucion
   const [pills, setPills] = React.useState("2");
   React.useEffect(() => {
@@ -30,6 +60,7 @@ function PrivateIndustry() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+
   return (
     <>
       <IndexNavbar />
@@ -48,27 +79,25 @@ function PrivateIndustry() {
             <div className="photo-container">
               <img alt="..." src={require("assets/img/bg3.jpg")}></img>
             </div>
-            <h3 className="title">PROYECTOS SECTOR PRIVADO</h3>
-          
           </Container>
+          {ProjectsData.map((product) => {
+            return (
+          <Container key={product.Id}>
+            <div >
+            <h2 className="title">{product.title}</h2>
+            <p className="category">Cliente: {product.client}</p>
+            <p className="category">Tipo de Proyecto: {product.typeProject}</p>
+            <p className="category">Ubicaciòn: {product.location}</p>
+            </div>
+          </Container>
+            );
+          })}
       </div>
         <div className="section">
           <Container>
-            <h5 className="description text-justify">
-            Se realizaron trabajos de mantenimiento como sustitución de pisos en 
-            la Dirección de Cooperación Económica y Organismos Internacionales 
-            ubicada en el edificio de la Secretaría de Relaciones Exteriores al 
-            centro de la ciudad, con la finalidad de brindarle a los funcionarios 
-            las mejores condiciones laborales posibles en uno de los edificios más 
-            emblemáticos de la Ciudad.
-            </h5>
-            <ul className="description text-justify">
-              <li >Secretaría de relaciones exteriores</li>
-              <li >Zona I</li>
-            </ul>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
-                <h4 className="title text-center">Remodelaciones</h4>
+                <h4 className="title text-center">Galeria de Proyectos</h4>
                 <div className="nav-align-center">
                   <Nav
                     className="nav-pills-info nav-pills-just-icons"
@@ -106,6 +135,15 @@ function PrivateIndustry() {
                 <TabPane tabId="pills2">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
+                    <h1 className="text-center">Centro de Primera Acogida "Huixtla"</h1>
+                      <h5 className="description text-justify">
+                       Se realizó el anteproyecto arquitectónico del centro de Primera
+                       Acogida para niñas, niños y adolescentes no acompañados en situación
+                       de migración en el Municipio de Huixtla, Chiapas, para el Sistema Nacional
+                       Para el Desarrollo Integral de la Familia, a través de la Agencia Mexicana de
+                       Cooperación Internacional. El proyecto costa de dormitorios, baños, regaderas,
+                       vestidores, comedor, cocina y la remodelación de sus oficinas.
+                      </h5>
                       <Col md="6">
                         <img
                           alt="..."
@@ -156,6 +194,12 @@ function PrivateIndustry() {
                 <TabPane tabId="pills1">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
+                    <h1 className="text-center">Inter Espacios</h1>
+                      <h5 className="description text-justify">
+                        Mantenimiento correctivo a las instalaciones eléctricas, asi como a la red 
+                        de voz y datos de veinte sucursales de la empresa Inter Espacios, ubicadas
+                        en la Ciudad de México, Estado de México, Puebla, Querétaro y Morelos.
+                      </h5>
                       <Col md="6">
                         <img
                           alt="..."
@@ -196,6 +240,7 @@ function PrivateIndustry() {
               </TabContent>
             </Row>
           </Container>
+          
         </div>
         <DarkFooter />
       </div>

@@ -99,16 +99,71 @@ function IndexNavbar() {
                   <p>Proyectos</p>
                 </DropdownToggle>
                 <DropdownMenu>
+                  <h6 className="text-center">2019</h6>
                   <DropdownItem to="/projects-page" tag={Link}>
-                    Gubernamental
+                    Torniquetes Metro Zócalo
+                  </DropdownItem>
+                  <h6 className="text-center">2020</h6>
+                  <DropdownItem
+                   to="/private-page/1" tag={Link}
+                  >
+                    Centro de Atención Temporal COVID-19
                   </DropdownItem>
                   <DropdownItem
-                   to="/private-page" tag={Link}
+                   to="/private-page/2" tag={Link}
                   >
-                    Privado
+                    Oficinas de Representación INM Quintana Roo
+                  </DropdownItem>
+                  <DropdownItem
+                   to="/private-page/3" tag={Link}
+                  >
+                    Oficinas de Representaciòn INM Yucatán
+                  </DropdownItem>
+                  <DropdownItem
+                   to="/private-page/4" tag={Link}
+                  >
+                    Sustitución de torniquetes Metro Linea 2
+                  </DropdownItem>
+                  <h6 className="text-center">2021</h6>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Oficina de Representacion INM Tabasco 
                   </DropdownItem>
                   <DropdownItem to="/hospital" tag={Link}>
-                  Sector Salud
+                  Oficina de Representacion INM Campeche 
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Fachada CES Morelos
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Mantenimiento API Progreso
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Caseta de vigilancia PRODECON
+                  </DropdownItem>
+                  <h6 className="text-center">2022</h6>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Remodelación Oficina
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Remodelación Fresas 63
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Roof Garden Taine 245
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Telesecundaria No.48
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Prim. José Vasconcelos, Santa Rosa
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Prim. Nueva Creación, El paraguas
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Rehabilitacion de Pabellón de Pelota
+                  </DropdownItem>
+                  <DropdownItem to="/hospital" tag={Link}>
+                  Cancha Techada de Usos Múltiples
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

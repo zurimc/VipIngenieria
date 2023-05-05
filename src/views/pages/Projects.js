@@ -47,34 +47,15 @@ function Projects() {
             <div className="photo-container">
               <img alt="..." src={require("assets/img/bg3.jpg")}></img>
             </div>
-            <h3 className="title">PROYECTOS GUBERNAMENTALES</h3>
+            <h3 className="title">PROYECTOS EN EL 2019    </h3>
           
           </Container>
       </div>
         <div className="section">
           <Container>
-            <h5 className="description text-justify">
-              La Secretaría de Relaciones Exteriores a través de la Agencia
-              Mexicana de Cooperación Internacional para el Desarrollo, ha 
-              impulsado el fortalecimiento en la modernización de la infraestructura
-              y prestación de los servicios migratorios mediante el mejoramiento de la
-              Estación Migratoria de Mexicali para el cual se trabajó en el diseño de 
-              anteproyecto, desarrollo de proyecto ejecutivo y ejecución de trabajos de 
-              remodelación, con el fin de mejorar el funcionamiento  y aumentar la
-              capacidad de personas por alojar, priorizando la seguridad de los mismos.
-            </h5>
-            <Container >
-              <ul className="description text-justify" >
-                <li>Centro migratorio de Mexicali.</li>
-                <li >Centro migratorio de Tijuana.</li>
-                <li >Centro migratorio de Tenosique.</li>
-                <li >Metro Zócalo.</li>
-                <li >Secretaría de Relaciones Exteriores.</li>
-              </ul>
-            </Container>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
-                <h4 className="title text-center">Remodelaciones</h4>
+                <h4 className="title text-center">Galeria de Proyectos</h4>
                 <div className="nav-align-center">
                   <Nav
                     className="nav-pills-info nav-pills-just-icons"
@@ -148,6 +129,17 @@ function Projects() {
                 <TabPane tabId="pills1">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
+                      <h1 className="text-center">Estación Migratoria de Mexicali</h1>
+                      <h5 className="description text-justify">
+                        La Secretaría de Relaciones Exteriores a través de la Agencia
+                        Mexicana de Cooperación Internacional para el Desarrollo, ha 
+                        impulsado el fortalecimiento en la modernización de la infraestructura
+                        y prestación de los servicios migratorios mediante el mejoramiento de la
+                        Estación Migratoria de Mexicali para el cual se trabajó en el diseño de 
+                        anteproyecto, desarrollo de proyecto ejecutivo y ejecución de trabajos de 
+                        remodelación, con el fin de mejorar el funcionamiento  y aumentar la
+                        capacidad de personas por alojar, priorizando la seguridad de los mismos.
+                      </h5>
                       <Col md="6">
                         <img
                           alt="..."
@@ -164,6 +156,11 @@ function Projects() {
                           className="img-raised"
                           src={require("assets/img/VIP/mexicali/5.jpg")}
                         ></img>
+                         <img
+                          alt="..."
+                          className="img-raised"
+                          src={require("assets/img/VIP/mexicali/6.jpg")}
+                        ></img>
                       </Col>
                       <Col md="6">
                         <img
@@ -176,11 +173,6 @@ function Projects() {
                           className="img-raised"
                           src={require("assets/img/VIP/mexicali/4.jpg")}
                         ></img>
-                         <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/VIP/mexicali/6.jpg")}
-                        ></img>
                       </Col>
                     </Row>
                   </Col>
@@ -188,6 +180,14 @@ function Projects() {
                 <TabPane tabId="pills2">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
+                    <h1 className="text-center">Remodelación CENDI "Rosario Castellanos"</h1>
+                      <h5 className="description text-justify">
+                        Con el objetivo de proporcionar mayor seguridad y aprovechamiento de actividades
+                        a la población estudiantil del CENDI "Rosario Castellanos", ubicado en el interior
+                        de las instalaciones de la Secretaría de Relaciones Exteriores, se realizaron trabajos
+                        de mantenimiento tales como, sustitución de pisos, carpinterías, cerrajerías e instalaciones,
+                        así como también reparación y pintura en muros interiores.
+                      </h5>
                       <Col md="6">
                         <img
                           alt="..."
@@ -233,6 +233,17 @@ function Projects() {
                 <TabPane tabId="pills3">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
+                    <h1 className="text-center">Estación Migratoria de Tenosique</h1>
+                      <h5 className="description text-justify">
+                        La Secretaría de Relaciones Exteriores a través de la Agencia
+                        Mexicana de Cooperación Internacional para el Desarrollo, ha 
+                        impulsado el fortalecimiento en la modernización de la infraestructura
+                        y prestación de los servicios migratorios mediante el mejoramiento de la
+                        Estación Migratoria de Tenosique. Se trabajó en el diseño de anteproyecto,
+                        desarrollo de proyecto ejecutivo y ejecución de trabajos de remodelación, 
+                        con el fin de mejorar el funcionamiento y la distribución de espacios para 
+                        garantizar la seguridad dentro de la estación.
+                      </h5>
                       <Col md="6">
                         <img
                           alt="..."
@@ -273,6 +284,17 @@ function Projects() {
                 <TabPane tabId="pills4">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
+                    <h1 className="text-center">Estación Migratoria de Tijuana</h1>
+                      <h5 className="description text-justify">
+                        La Secretaría de Relaciones Exteriores a través de la Agencia
+                        Mexicana de Cooperación Internacional para el Desarrollo, ha 
+                        impulsado el fortalecimiento en la modernización de la infraestructura
+                        y prestación de los servicios migratorios mediante el mejoramiento de la
+                        Estación Migratoria de Tijuana. Se trabajó en el diseño de anteproyecto,
+                        desarrollo de proyecto ejecutivo y ejecución de trabajos de remodelación, 
+                        con el fin de mejorar el funcionamiento y la distribución de espacios para 
+                        garantizar la seguridad dentro de la estación.
+                      </h5>
                       <Col md="6">
                         <img
                           alt="..."
@@ -303,6 +325,14 @@ function Projects() {
                 <TabPane tabId="pills5">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
+                    <h1 className="text-center">Sistema de Transporte Colectivo Metro</h1>
+                      <h5 className="description text-justify">
+                        Con la iniciativa de modernización del metro de la Ciudad de México por parte 
+                        del Sistema de Transporte Colectivo Metro se realizaron trabajos de mantenimiento
+                        de pisos, removiendo y sustituyendo las piezas de mármol dañadas. Asimismo, se realizó
+                        el reemplazo de los torniquetes de acceso por puestas retráctiles de cristal que 
+                        cuentan con sensores para detectar la proximidad de las personas.
+                      </h5>
                       <Col md="6">
                         <img
                           alt="..."
