@@ -43,6 +43,44 @@ const ProjectsData = [
 },
 ]
 
+const data = [
+  {
+    Id: "1",
+    Covid: {
+      title: "Centro de Primera Acogida 'Huixtla'",
+      description:
+        " Se realizó el anteproyecto arquitectónico del centro de Primera Acogida para niñas, niños y adolescentes no acompañados en situación"+
+        " de migración en el Municipio de Huixtla, Chiapas, para el Sistema Nacional" +
+        " Para el Desarrollo Integral de la Familia, a través de la Agencia Mexicana de" +
+        " Cooperación Internacional. El proyecto costa de dormitorios, baños, regaderas,"+
+        "vestidores, comedor, cocina y la remodelación de sus oficinas.",
+      image1: require("assets/img/VIP/sre/1.jpg"),  
+      image2: require("assets/img/VIP/sre/2.jpg"), 
+      image3: require("assets/img/VIP/sre/3.jpg"), 
+      image4: require("assets/img/VIP/sre/4.jpg"), 
+      image5: require("assets/img/VIP/sre/5.jpg"), 
+      image6: require("assets/img/VIP/sre/6.jpg"), 
+      image7: require("assets/img/VIP/sre/7.jpg"), 
+      image8: require("assets/img/VIP/sre/8.jpg"),  
+    },
+    Id: "2",
+    galeria: {
+      title: "Inter Espacios'",
+      description:
+      "Mantenimiento correctivo a las instalaciones eléctricas, asi como a la red"+ 
+      "de voz y datos de veinte sucursales de la empresa Inter Espacios, ubicadas"+
+      "en la Ciudad de México, Estado de México, Puebla, Querétaro y Morelos.",
+      image1: require("assets/img/VIP/zona/1.jpg"),  
+      image2: require("assets/img/VIP/zona/2.jpg"), 
+      image3: require("assets/img/VIP/zona/3.jpg"), 
+      image4: require("assets/img/VIP/zona/4.jpg"), 
+      image5: require("assets/img/VIP/zona/5.jpg"), 
+      image6: require("assets/img/VIP/zona/6.jpg"),
+    },
+   
+  },
+]
+
 function PrivateIndustry() {
 
 
@@ -131,61 +169,58 @@ function PrivateIndustry() {
                   </Nav>
                 </div>
               </Col>
+              {data.map((info) => {
+            return (
               <TabContent className="gallery" activeTab={"pills" + pills}>
                 <TabPane tabId="pills2">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
-                    <h1 className="text-center">Centro de Primera Acogida "Huixtla"</h1>
+                    <h1 className="text-center">{info.Covid.title}</h1>
                       <h5 className="description text-justify">
-                       Se realizó el anteproyecto arquitectónico del centro de Primera
-                       Acogida para niñas, niños y adolescentes no acompañados en situación
-                       de migración en el Municipio de Huixtla, Chiapas, para el Sistema Nacional
-                       Para el Desarrollo Integral de la Familia, a través de la Agencia Mexicana de
-                       Cooperación Internacional. El proyecto costa de dormitorios, baños, regaderas,
-                       vestidores, comedor, cocina y la remodelación de sus oficinas.
+                      {info.Covid.description}
                       </h5>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/sre/1.jpg")}
+                          src={info.Covid.image1}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/sre/2.jpg")}
+                          src={info.Covid.image2}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/sre/5.jpg")}
+                          src={info.Covid.image3}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/sre/7.jpg")}
+                          src={info.Covid.image4}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/sre/3.jpg")}
+                          src={info.Covid.image5}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/sre/4.jpg")}
+                          src={info.Covid.image6}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/sre/6.jpg")}
+                          src={info.Covid.image7}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/sre/8.jpg")}
+                          src={info.Covid.image8}
                         ></img>
                       </Col>
                     </Row>
@@ -194,50 +229,50 @@ function PrivateIndustry() {
                 <TabPane tabId="pills1">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
-                    <h1 className="text-center">Inter Espacios</h1>
+                    <h1 className="text-center">{info.galeria.title}</h1>
                       <h5 className="description text-justify">
-                        Mantenimiento correctivo a las instalaciones eléctricas, asi como a la red 
-                        de voz y datos de veinte sucursales de la empresa Inter Espacios, ubicadas
-                        en la Ciudad de México, Estado de México, Puebla, Querétaro y Morelos.
+                        {info.galeria.description}
                       </h5>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/zona/1.jpg")}
+                          src={info.galeria.image1}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/zona/4.jpg")}
+                          src={info.galeria.image2}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/zona/5.jpg")}
+                          src={info.galeria.image3}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/zona/2.jpg")}
+                          src={info.galeria.image4}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/zona/3.jpg")}
+                          src={info.galeria.image5}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/VIP/zona/6.jpg")}
+                          src={info.galeria.image6}
                         ></img>
                       </Col>
                     </Row>
                   </Col>
                 </TabPane>
               </TabContent>
+   );
+  })}
             </Row>
           </Container>
           
