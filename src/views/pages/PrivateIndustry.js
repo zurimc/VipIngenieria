@@ -65,7 +65,7 @@ const data = [
     },
     Id: "2",
     galeria: {
-      title: "Inter Espacios'",
+      title: "Inter Espacios",
       description:
       "Mantenimiento correctivo a las instalaciones eléctricas, asi como a la red"+ 
       "de voz y datos de veinte sucursales de la empresa Inter Espacios, ubicadas"+
