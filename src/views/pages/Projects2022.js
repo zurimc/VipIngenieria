@@ -27,7 +27,7 @@ const ProjectsData = [
 
 ]
 
-function Projects() {
+function Projects2022() {
   //Menu de hamburguesa cuando la resolucion cambia
   const [pills, setPills] = React.useState("2");
   React.useEffect(() => {
@@ -388,4 +388,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Projects2022;

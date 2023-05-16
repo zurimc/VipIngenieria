@@ -20,18 +20,19 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 const ProjectsData = [
   {
     Id: "1",
-    path: "/private-page/1",
+    path: "/projects-2020/1",
     title: "Centro de Atención Temporal COVID-19",
-    client: "SRE/INM",
+    client: "---",
     typeProject: "Anteproyecto arquitectónico",
-    location: "Ciudad de México",
-    subtitle: "",
+    location: "---",
+    surface: "2111.41 M2",
     description:
-        " Se realizó el anteproyecto arquitectónico del centro de Primera Acogida para niñas, niños y adolescentes no acompañados en situación"+
-        " de migración en el Municipio de Huixtla, Chiapas, para el Sistema Nacional" +
-        " Para el Desarrollo Integral de la Familia, a través de la Agencia Mexicana de" +
-        " Cooperación Internacional. El proyecto costa de dormitorios, baños, regaderas,"+
-        "vestidores, comedor, cocina y la remodelación de sus oficinas.",
+        " Se denominan Centros de Atención Temporal COVID-19 (CAT-COVID19)"+
+        " a los módulos provisionales habilitados durante la contingencia por" +
+        " SARS-CoV2 (COVID19), ubicados en estacionamientos, espacios aledaños o alternativos" +
+        "a un hospital de reconversión.Tienen la función de ampliar la capacidad"+
+        "de atención del hospital a pacientes y de permitir la diferenciación entre"+
+        "pacientes con sospecha y confirmados de COVID-19 de otras patologías, con el fin de brindarles la mejor atención.",
       image1: require("assets/img/VIP/sre/1.jpg"),  
       image2: require("assets/img/VIP/sre/2.jpg"), 
       image3: require("assets/img/VIP/sre/3.jpg"), 
@@ -44,15 +45,16 @@ const ProjectsData = [
 },
 {
   Id: "2",
-  path: "/private-page/2",
-  title: "Oficinas de Representaciòn INM Quintana Roo",
-  client: "INM",
-  typeProject: "Mantenimiento preventivo y correctivo",
-  location: "Quintana Roo",
+  path: "/projects-2020/2",
+  title: "Centro de Primera Acogida",
+  client: "---",
+  typeProject: "Propuesta arquitectónica",
+  location: "---",
+  surface: "646.82 M2",
   description:
-      "Mantenimiento correctivo a las instalaciones eléctricas, asi como a la red"+ 
-      "de voz y datos de veinte sucursales de la empresa Inter Espacios, ubicadas"+
-      "en la Ciudad de México, Estado de México, Puebla, Querétaro y Morelos.",
+      "Se realizó el anteproyecto arquitectónico de un centro de Primera Acogida para"+ 
+      "niñas, niños y adolescentes no acompañados en situacion de migración.El proyecto"+
+      "consta de dormitorios, baños, regaderas, vestidores, comedor, cocina y la remodelación de sus oficinas.",
       image1: require("assets/img/VIP/zona/1.jpg"),  
       image2: require("assets/img/VIP/zona/2.jpg"), 
       image3: require("assets/img/VIP/zona/3.jpg"), 
@@ -60,19 +62,10 @@ const ProjectsData = [
       image5: require("assets/img/VIP/zona/5.jpg"), 
       image6: require("assets/img/VIP/zona/6.jpg"),
 
-},
-{
-  Id: "3",
-  path: "/private-page/3",
-  title: "Oficinas de Representaciòn INM Yucatán",
-  client: "INM",
-  typeProject: "Mantenimiento preventivo y correctivo",
-  location: "Yucatàn"
-
-},
+}
 ]
 
-function PrivateIndustry(props) {
+function Projects2020(props) {
 const location = useLocation();
 const currentPath = location.pathname;
 const privateIndustry = ProjectsData.find(
@@ -120,6 +113,7 @@ const privateIndustry = ProjectsData.find(
               <p className="category">Cliente: {privateIndustry.client}</p>
               <p className="category">Tipo de Proyecto: {privateIndustry.typeProject}</p>
               <p className="category">Ubicación: {privateIndustry.location}</p>
+              <p className="category">Ubicación: {privateIndustry.surface}</p>
             </div>
           </Container>
         )}
@@ -157,7 +151,6 @@ const privateIndustry = ProjectsData.find(
                 <TabPane tabId="pills2">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
-                    <h1 className="text-center">{privateIndustry.subtitle}</h1>
                       <h5 className="description text-justify">
                       {privateIndustry.description}
                       </h5>
@@ -210,4 +203,4 @@ const privateIndustry = ProjectsData.find(
   );
 }
 
-export default PrivateIndustry;
+export default Projects2020;

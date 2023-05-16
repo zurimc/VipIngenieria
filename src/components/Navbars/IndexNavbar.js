@@ -99,71 +99,51 @@ function IndexNavbar() {
                   <p>Proyectos</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <h6 className="text-center">2019</h6>
+                  {/* <h6 className="text-center">2019</h6>
                   <DropdownItem to="/projects-page" tag={Link}>
                     Torniquetes Metro Zócalo
-                  </DropdownItem>
+                  </DropdownItem> */}
                   <h6 className="text-center">2020</h6>
                   <DropdownItem
-                   to="/private-page/1"  tag={Link} 
-                  >
+                   to="/projects-2020/1"  tag={Link} >
                     Centro de Atención Temporal COVID-19
                   </DropdownItem>
                   <DropdownItem
-                   to="/private-page/2" tag={Link}
-                  >
-                    Oficinas de Representación INM Quintana Roo
+                   to="/projects-2020/2" tag={Link}>
+                    Centro de Primera Acogida
                   </DropdownItem>
-                  <DropdownItem
-                   to="/private-page/3" tag={Link}
-                  >
-                    Oficinas de Representaciòn INM Yucatán
-                  </DropdownItem>
-                  <DropdownItem
-                   to="/private-page/:id" tag={Link}
-                  >
-                    Sustitución de torniquetes Metro Linea 2
-                  </DropdownItem>
+                 
                   <h6 className="text-center">2021</h6>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Oficina de Representacion INM Tabasco 
+                  <DropdownItem
+                   to="/projects-2021/1" tag={Link}>
+                    Biblioteca Escolar
                   </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Oficina de Representacion INM Campeche 
+                  <DropdownItem
+                   to="/projects-2021/2" tag={Link}>
+                    Gimnasio Escolar
                   </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Fachada CES Morelos
+                  <DropdownItem to="/projects-2021/3" tag={Link}>
+                  Campo de tiro techado
                   </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Mantenimiento API Progreso
+                  <DropdownItem to="/projects-2021/4" tag={Link}>
+                  Torre de Entrenamiento Múltiple 
                   </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Caseta de vigilancia PRODECON
+                  <DropdownItem to="/projects-2021/5" tag={Link}>
+                  Torre de dormitorio Escolar
                   </DropdownItem>
+                  
                   <h6 className="text-center">2022</h6>
-                  <DropdownItem to="/hospital" tag={Link}>
+                  <DropdownItem to="/projects-2021" tag={Link}>
                   Remodelación Oficina
                   </DropdownItem>
                   <DropdownItem to="/hospital" tag={Link}>
-                  Remodelación Fresas 63
+                  Ludoteca
                   </DropdownItem>
                   <DropdownItem to="/hospital" tag={Link}>
-                  Roof Garden Taine 245
+                  Mantenimiento Residencial
                   </DropdownItem>
                   <DropdownItem to="/hospital" tag={Link}>
-                  Telesecundaria No.48
-                  </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Prim. José Vasconcelos, Santa Rosa
-                  </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Prim. Nueva Creación, El paraguas
-                  </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Rehabilitacion de Pabellón de Pelota
-                  </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
-                  Cancha Techada de Usos Múltiples
+                  Remodelación Roof Garden
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
