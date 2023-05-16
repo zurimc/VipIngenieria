@@ -15,6 +15,18 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
+const ProjectsData = [
+  {
+    Id: "1",
+    title: "Torqniquetes Metro Zócalo",
+    client: "Sistema de Transporte Colectivo Metro",
+    typeProject: "Mantenimiento",
+    location: "Ciudad de México"
+  
+},
+
+]
+
 function Projects() {
   //Menu de hamburguesa cuando la resolucion cambia
   const [pills, setPills] = React.useState("2");

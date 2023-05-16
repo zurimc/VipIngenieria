@@ -16,6 +16,48 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
+const ProjectsData = [
+  {
+    Id: "1",
+    title: "Oficina de Representación INM Tabasco",
+    client: "INM",
+    typeProject: "Mantenimiento preventivo y correctivo",
+    location: "Tabasco"
+  
+},
+{
+  Id: "2",
+  title: "Oficinas de Representaciòn INM Campeche",
+  client: "INM",
+  typeProject: "Mantenimiento preventivo y correctivo",
+  location: "Campeche"
+
+},
+{
+  Id: "3",
+  title: "Fachada CES Morelos",
+  client: "CES Morelos",
+  typeProject: "Mantenimiento preventivo",
+  location: "Morelos"
+
+},
+{
+  Id: "4",
+  title: "Mantenimiento API Progreso",
+  client: "ASIPONA",
+  typeProject: "Servicio de mantenimiento general del Recinto Portuario",
+  location: "Progreso,  Yucatán"
+
+},
+{
+  Id: "5",
+  title: "Caseta de vigilancia PRODECON",
+  client: "PRODECON",
+  typeProject: "Proyecto arquitectónico y remodelación",
+  location: "Ciudad de México"
+
+},
+]
 function Hospital() {
   //menu de hamburguesa cuando la resolucio cambia.
   const [pills, setPills] = React.useState("2");

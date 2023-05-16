@@ -105,7 +105,7 @@ function IndexNavbar() {
                   </DropdownItem>
                   <h6 className="text-center">2020</h6>
                   <DropdownItem
-                   to="/private-page/1" tag={Link}
+                   to="/private-page/1"  tag={Link} 
                   >
                     Centro de Atención Temporal COVID-19
                   </DropdownItem>
@@ -120,7 +120,7 @@ function IndexNavbar() {
                     Oficinas de Representaciòn INM Yucatán
                   </DropdownItem>
                   <DropdownItem
-                   to="/private-page/4" tag={Link}
+                   to="/private-page/:id" tag={Link}
                   >
                     Sustitución de torniquetes Metro Linea 2
                   </DropdownItem>

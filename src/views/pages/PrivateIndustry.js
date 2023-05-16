@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 // reactstrap components
 import {
@@ -19,36 +20,13 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 const ProjectsData = [
   {
     Id: "1",
+    path: "/private-page/1",
     title: "Centro de Atención Temporal COVID-19",
     client: "SRE/INM",
     typeProject: "Anteproyecto arquitectónico",
-    location: "Ciudad de México"
-  
-},
-{
-  Id: "2",
-  title: "Oficinas de Representaciòn INM Quintana Roo",
-  client: "INM",
-  typeProject: "Mantenimiento preventivo y correctivo",
-  location: "Quintana Roo"
-
-},
-{
-  Id: "3",
-  title: "Oficinas de Representaciòn INM Yucatán",
-  client: "INM",
-  typeProject: "Mantenimiento preventivo y correctivo",
-  location: "Yucatàn"
-
-},
-]
-
-const data = [
-  {
-    Id: "1",
-    Covid: {
-      title: "Centro de Primera Acogida 'Huixtla'",
-      description:
+    location: "Ciudad de México",
+    subtitle: "",
+    description:
         " Se realizó el anteproyecto arquitectónico del centro de Primera Acogida para niñas, niños y adolescentes no acompañados en situación"+
         " de migración en el Municipio de Huixtla, Chiapas, para el Sistema Nacional" +
         " Para el Desarrollo Integral de la Familia, a través de la Agencia Mexicana de" +
@@ -62,11 +40,16 @@ const data = [
       image6: require("assets/img/VIP/sre/6.jpg"), 
       image7: require("assets/img/VIP/sre/7.jpg"), 
       image8: require("assets/img/VIP/sre/8.jpg"),  
-    },
-    Id: "2",
-    galeria: {
-      title: "Inter Espacios",
-      description:
+  
+},
+{
+  Id: "2",
+  path: "/private-page/2",
+  title: "Oficinas de Representaciòn INM Quintana Roo",
+  client: "INM",
+  typeProject: "Mantenimiento preventivo y correctivo",
+  location: "Quintana Roo",
+  description:
       "Mantenimiento correctivo a las instalaciones eléctricas, asi como a la red"+ 
       "de voz y datos de veinte sucursales de la empresa Inter Espacios, ubicadas"+
       "en la Ciudad de México, Estado de México, Puebla, Querétaro y Morelos.",
@@ -76,13 +59,25 @@ const data = [
       image4: require("assets/img/VIP/zona/4.jpg"), 
       image5: require("assets/img/VIP/zona/5.jpg"), 
       image6: require("assets/img/VIP/zona/6.jpg"),
-    },
-   
-  },
+
+},
+{
+  Id: "3",
+  path: "/private-page/3",
+  title: "Oficinas de Representaciòn INM Yucatán",
+  client: "INM",
+  typeProject: "Mantenimiento preventivo y correctivo",
+  location: "Yucatàn"
+
+},
 ]
 
-function PrivateIndustry() {
-
+function PrivateIndustry(props) {
+const location = useLocation();
+const currentPath = location.pathname;
+const privateIndustry = ProjectsData.find(
+  (p) => p.path === currentPath
+);
 
 
   //menu de hamburguesa cuando se cambia la resolucion
@@ -118,18 +113,16 @@ function PrivateIndustry() {
               <img alt="..." src={require("assets/img/bg3.jpg")}></img>
             </div>
           </Container>
-          {ProjectsData.map((product) => {
-            return (
-          <Container key={product.Id}>
-            <div >
-            <h2 className="title">{product.title}</h2>
-            <p className="category">Cliente: {product.client}</p>
-            <p className="category">Tipo de Proyecto: {product.typeProject}</p>
-            <p className="category">Ubicaciòn: {product.location}</p>
+          {privateIndustry && (
+          <Container key={privateIndustry.Id}>
+            <div>
+              <h2 className="title">{privateIndustry.title}</h2>
+              <p className="category">Cliente: {privateIndustry.client}</p>
+              <p className="category">Tipo de Proyecto: {privateIndustry.typeProject}</p>
+              <p className="category">Ubicación: {privateIndustry.location}</p>
             </div>
           </Container>
-            );
-          })}
+        )}
       </div>
         <div className="section">
           <Container>
@@ -142,18 +135,7 @@ function PrivateIndustry() {
                     pills
                     role="tablist"
                   >
-                    <NavItem>
-                      <NavLink
-                        className={pills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("1");
-                        }}
-                      >
-                        <i className="now-ui-icons design_image"></i>
-                      </NavLink>
-                    </NavItem>
+                  
                     <NavItem>
                       <NavLink
                         className={pills === "2" ? "active" : ""}
@@ -169,110 +151,55 @@ function PrivateIndustry() {
                   </Nav>
                 </div>
               </Col>
-              {data.map((info) => {
-            return (
+              {privateIndustry && (
               <TabContent className="gallery" activeTab={"pills" + pills}>
+                
                 <TabPane tabId="pills2">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
-                    <h1 className="text-center">{info.Covid.title}</h1>
+                    <h1 className="text-center">{privateIndustry.subtitle}</h1>
                       <h5 className="description text-justify">
-                      {info.Covid.description}
+                      {privateIndustry.description}
                       </h5>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={info.Covid.image1}
+                          src={privateIndustry.image1}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={info.Covid.image2}
+                          src={privateIndustry.image2}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={info.Covid.image3}
-                        ></img>
-                         <img
-                          alt="..."
-                          className="img-raised"
-                          src={info.Covid.image4}
+                          src={privateIndustry.image3}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={info.Covid.image5}
+                          src={privateIndustry.image4}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={info.Covid.image6}
+                          src={privateIndustry.image5}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={info.Covid.image7}
-                        ></img>
-                         <img
-                          alt="..."
-                          className="img-raised"
-                          src={info.Covid.image8}
-                        ></img>
-                      </Col>
-                    </Row>
-                  </Col>
-                </TabPane>
-                <TabPane tabId="pills1">
-                  <Col className="ml-auto mr-auto" md="10">
-                    <Row className="collections">
-                    <h1 className="text-center">{info.galeria.title}</h1>
-                      <h5 className="description text-justify">
-                        {info.galeria.description}
-                      </h5>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={info.galeria.image1}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={info.galeria.image2}
-                        ></img>
-                         <img
-                          alt="..."
-                          className="img-raised"
-                          src={info.galeria.image3}
-                        ></img>
-                      </Col>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={info.galeria.image4}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={info.galeria.image5}
-                        ></img>
-                         <img
-                          alt="..."
-                          className="img-raised"
-                          src={info.galeria.image6}
+                          src={privateIndustry.image6}
                         ></img>
                       </Col>
                     </Row>
                   </Col>
                 </TabPane>
               </TabContent>
-   );
-  })}
+    )}
             </Row>
           </Container>
           
