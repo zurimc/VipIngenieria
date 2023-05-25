@@ -35,7 +35,7 @@ function AboutUs() {
               <Col className="ml-auto mr-auto text-center" md="8">
               <h2 className="title">¿Quiénes somos?</h2>
                 <h3 className="title">Antecedentes</h3>
-                <h5 className="description">
+                <h5 className="description" style={{textAlign: "center"}}>
                   Empresa 100% mexicana, con sede en la Ciudad de México. Fundada en 1992, con una
                   trayectoria de más de 27 años desarrollando proyectos arquitectónicos, construccion,
                   gerencia, supervisión y mantenimiento.
@@ -62,7 +62,7 @@ function AboutUs() {
                     }}
                   ></div>
                 </Col>
-                <Col md="5">
+                <Col md="6">
                   <div
                     className="image-container image-right"
                     style={{
@@ -70,7 +70,7 @@ function AboutUs() {
                         "url(" + require("assets/img/somos5.jpg") + ")"
                     }}
                   ></div>
-                  <p>
+                   <p>
                     Tenemos presencia a nivel nacional gracias a que contamos con personal
                     capacitado para diseñar, planear, coordinar y ejecutar proyectos de 
                     todo tipo, garantizando la mejor atención, una ejecución correcta y la
@@ -81,18 +81,14 @@ function AboutUs() {
             </div>
           </Container>
         </div>
-        <div className="section section-team text-center">
+        <div className="section-team text-center">
           <Container>
             <h2 className="title">Filosofía</h2>
             <div className="team">
               <Row>
                 <Col md="6">
                   <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/somos8.jpg")}
-                    ></img>
+                    
                     <p className="category text-info">Misión</p>
                     <p className="description">
                       Ofrecer siempre la mejor calidad en cada uno de nuestros
@@ -104,11 +100,6 @@ function AboutUs() {
                 </Col>
                 <Col md="6">
                   <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/somos8.jpg")}
-                    ></img>
                     <p className="category text-info">Visión</p>
                     <p className="description">
                       Ampliar nuestra presencia en el país, para crecer en el

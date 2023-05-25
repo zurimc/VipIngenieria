@@ -27,21 +27,15 @@ const ProjectsData = [
     location: "---",
     surface: "2111.41 M2",
     description:
-        " Se denominan Centros de Atención Temporal COVID-19 (CAT-COVID19)"+
-        " a los módulos provisionales habilitados durante la contingencia por" +
-        " SARS-CoV2 (COVID19), ubicados en estacionamientos, espacios aledaños o alternativos" +
-        "a un hospital de reconversión.Tienen la función de ampliar la capacidad"+
-        "de atención del hospital a pacientes y de permitir la diferenciación entre"+
+        " Se denominan Centros de Atención Temporal COVID-19 (CAT-COVID19) "+
+        " a los módulos provisionales habilitados durante la contingencia por " +
+        " SARS-CoV2 (COVID19), ubicados en estacionamientos, espacios aledaños o alternativos " +
+        "a un hospital de reconversión. Tienen la función de ampliar la capacidad "+
+        "de atención del hospital a pacientes y de permitir la diferenciación entre "+
         "pacientes con sospecha y confirmados de COVID-19 de otras patologías, con el fin de brindarles la mejor atención.",
-      image1: require("assets/img/VIP/sre/1.jpg"),  
-      image2: require("assets/img/VIP/sre/2.jpg"), 
-      image3: require("assets/img/VIP/sre/3.jpg"), 
-      image4: require("assets/img/VIP/sre/4.jpg"), 
-      image5: require("assets/img/VIP/sre/5.jpg"), 
-      image6: require("assets/img/VIP/sre/6.jpg"), 
-      image7: require("assets/img/VIP/sre/7.jpg"), 
-      image8: require("assets/img/VIP/sre/8.jpg"),  
-  
+      image1: require("assets/img/VIP/6. TEMPORAL COVID/Imagen8.png"),  
+      image2: require("assets/img/VIP/6. TEMPORAL COVID/Imagen9.png"), 
+      image3: require("assets/img/VIP/6. TEMPORAL COVID/Imagen10.png"),
 },
 {
   Id: "2",
@@ -52,15 +46,14 @@ const ProjectsData = [
   location: "---",
   surface: "646.82 M2",
   description:
-      "Se realizó el anteproyecto arquitectónico de un centro de Primera Acogida para"+ 
-      "niñas, niños y adolescentes no acompañados en situacion de migración.El proyecto"+
+      "Se realizó el anteproyecto arquitectónico de un centro de Primera Acogida para "+ 
+      "niñas, niños y adolescentes no acompañados en situacion de migración. El proyecto "+
       "consta de dormitorios, baños, regaderas, vestidores, comedor, cocina y la remodelación de sus oficinas.",
-      image1: require("assets/img/VIP/zona/1.jpg"),  
-      image2: require("assets/img/VIP/zona/2.jpg"), 
-      image3: require("assets/img/VIP/zona/3.jpg"), 
-      image4: require("assets/img/VIP/zona/4.jpg"), 
-      image5: require("assets/img/VIP/zona/5.jpg"), 
-      image6: require("assets/img/VIP/zona/6.jpg"),
+      image1: require("assets/img/VIP/9. CENTRO PRIMERA ACOGIDA/Diapositiva1.PNG"),  
+      image2: require("assets/img/VIP/9. CENTRO PRIMERA ACOGIDA/Diapositiva2.PNG"), 
+      image3: require("assets/img/VIP/9. CENTRO PRIMERA ACOGIDA/Diapositiva3.PNG"), 
+      image4: require("assets/img/VIP/9. CENTRO PRIMERA ACOGIDA/Diapositiva4.PNG"), 
+      image5: require("assets/img/VIP/9. CENTRO PRIMERA ACOGIDA/Diapositiva5.PNG"), 
 
 }
 ]
@@ -124,25 +117,7 @@ const privateIndustry = ProjectsData.find(
               <Col className="ml-auto mr-auto" md="6">
                 <h4 className="title text-center">Galeria de Proyectos</h4>
                 <div className="nav-align-center">
-                  <Nav
-                    className="nav-pills-info nav-pills-just-icons"
-                    pills
-                    role="tablist"
-                  >
-                  
-                    <NavItem>
-                      <NavLink
-                        className={pills === "2" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("2");
-                        }}
-                      >
-                        <i className="now-ui-icons design_image"></i>
-                      </NavLink>
-                    </NavItem>
-                  </Nav>
+                 
                 </div>
               </Col>
               {privateIndustry && (
@@ -163,24 +138,25 @@ const privateIndustry = ProjectsData.find(
                         <img
                           alt="..."
                           className="img-raised"
-                          src={privateIndustry.image2}
+                          src={privateIndustry.image3}
                         ></img>
                          <img
                           alt="..."
                           className="img-raised"
-                          src={privateIndustry.image3}
+                          src={privateIndustry.image5}
                         ></img>
                       </Col>
+
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={privateIndustry.image4}
+                          src={privateIndustry.image2}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={privateIndustry.image5}
+                          src={privateIndustry.image4}
                         ></img>
                          <img
                           alt="..."

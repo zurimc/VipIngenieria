@@ -11,43 +11,11 @@ function DarkFooter() {
         <div  id="copyright">
           <Row className="collections">
             <Col md="4">
-              Redes sociales
-              <ul>
-                <li>
-                  <Button
-                    className="btn-icon btn-round"
-                    color="info"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                    >
-                    <i className="fab fa-facebook-square"></i>
-                  </Button>
-                </li>
-              </ul>
-             <ul>
-              <li>
-                <Button
-                  className="btn-icon btn-round"
-                  color="info"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-twitter"></i>
-                </Button>
-              </li>
-             </ul>
-             <ul>
-              <li>
-                <Button
-                  className="btn-icon btn-round"
-                  color="info"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-google-plus"></i>
-                </Button>
-              </li>
-             </ul>
+                <img
+                  alt="..."
+                  style={{width:"230px"}}
+                  src={require("assets/img/vip.png")}
+                ></img>
             </Col>
             <Col md="4">
               Contacto

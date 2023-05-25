@@ -11,7 +11,7 @@ function Services() {
   
   return (
     <>
-      <div className=" text-center">
+      <div className=" section text-center">
           <Container>
             <h2 className="title">Servicios</h2>
            <Row>

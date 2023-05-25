@@ -77,7 +77,7 @@ function ContactUs() {
   return (
     <>
     <IndexNavbar />
-    <div filter-color="blue"  ref={pageHeader}>
+    <div filter-color="gray"  ref={pageHeader}>
       <div className="wrapper">
         <div
           className="section section-signup"

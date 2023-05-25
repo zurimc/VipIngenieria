@@ -1,10 +1,9 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 // reactstrap components
 import {
-  NavItem,
-  NavLink,
-  Nav,
+  
   TabContent,
   TabPane,
   Container,
@@ -26,44 +25,118 @@ const ProjectsData = [
     location: "---",
     surface: "493.30 M2",
     description:
-        " Se denominan Centros de Atención Temporal COVID-19 (CAT-COVID19)"+
-        " a los módulos provisionales habilitados durante la contingencia por" +
-        " SARS-CoV2 (COVID19), ubicados en estacionamientos, espacios aledaños o alternativos" +
-        "a un hospital de reconversión.Tienen la función de ampliar la capacidad"+
-        "de atención del hospital a pacientes y de permitir la diferenciación entre"+
-        "pacientes con sospecha y confirmados de COVID-19 de otras patologías, con el fin de brindarles la mejor atención.",
-      image1: require("assets/img/VIP/sre/1.jpg"),  
-      image2: require("assets/img/VIP/sre/2.jpg"), 
-      image3: require("assets/img/VIP/sre/3.jpg"), 
-      image4: require("assets/img/VIP/sre/4.jpg"), 
-      image5: require("assets/img/VIP/sre/5.jpg"), 
-      image6: require("assets/img/VIP/sre/6.jpg"), 
-      image7: require("assets/img/VIP/sre/7.jpg"), 
-      image8: require("assets/img/VIP/sre/8.jpg"),  
-  
+        "Se realizó el diseño de anteproyecto de adaptación de un edificio destinado como "+
+        "gimnasio con canchas deportivas para deportes de raqueta a doble altura, para " +
+        "convertirlo en una biblioteca escolar. Contemplando un área de consulta, lectura, " +
+        "acervo, así como un área administrativa, con la finalidad de albergar a "+
+        "aproximadamente 100 personas.",
+      image1: require("assets/img/VIP/11. BIBLIOTECA ESCOLAR/Imagen1.png"),  
+      image2: require("assets/img/VIP/11. BIBLIOTECA ESCOLAR/Imagen2.png"), 
+      image3: require("assets/img/VIP/11. BIBLIOTECA ESCOLAR/Imagen3.png"), 
+      image4: require("assets/img/VIP/11. BIBLIOTECA ESCOLAR/Imagen4.png"), 
+      image5: require("assets/img/VIP/11. BIBLIOTECA ESCOLAR/Imagen5.png"), 
+      image6: require("assets/img/VIP/11. BIBLIOTECA ESCOLAR/Imagen6.png"), 
 },
 {
   Id: "2",
-  path: "/projects-2020/2",
-  title: "Centro de Primera Acogida",
+  path: "/projects-2021/2",
+  title: "Gimnasio Escolar",
   client: "---",
-  typeProject: "Propuesta arquitectónica",
+  typeProject: "Anteproyecto y proyecto Arquitectónico.",
   location: "---",
-  surface: "646.82 M2",
+  surface: "445.00 M2",
   description:
-      "Se realizó el anteproyecto arquitectónico de un centro de Primera Acogida para"+ 
-      "niñas, niños y adolescentes no acompañados en situacion de migración.El proyecto"+
-      "consta de dormitorios, baños, regaderas, vestidores, comedor, cocina y la remodelación de sus oficinas.",
-      image1: require("assets/img/VIP/zona/1.jpg"),  
-      image2: require("assets/img/VIP/zona/2.jpg"), 
-      image3: require("assets/img/VIP/zona/3.jpg"), 
-      image4: require("assets/img/VIP/zona/4.jpg"), 
-      image5: require("assets/img/VIP/zona/5.jpg"), 
-      image6: require("assets/img/VIP/zona/6.jpg"),
+      "Se realizó la propuesta de proyecto arquitectónico de un gimnasio "+ 
+      "techado y al aire libre en un área verde. El proyecto se resolvió "+
+      "con una cubierta ligera, estructura de acero y cancelerías, con la intención "+ 
+      "de vincular el espacio interior con el exterior.",
+      image1: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen7.png"),  
+      image2: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen8.png"), 
+      image3: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen9.png"), 
+      image4: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen10.png"), 
+      image5: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen11.png"), 
+      image6: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen12.png"),
+      image7: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen13.png"), 
+      image8: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen14.png"),
 
-}
+},
+{
+  Id: "3",
+  path: "/projects-2021/3",
+  title: "Campo de tiro techado",
+  client: "---",
+  typeProject: "Anteproyecto y proyecto Arquitectónico.",
+  location: "---",
+  surface: "553.38 M2",
+  description:
+      "Se realizó la propuesta de remodelación del campo de tiro, con la finalidad "+ 
+      "de mejorar las instalaciones y reducir el ruido emitido durante los "+
+      "entrenamientos del alumnado, se propuso cerrar el espacio con una nueva cubierta "+ 
+      "y muros a base de panales de tabla cemento. Para cubrir las necesidades del "+
+      "proyecto, se consideraron materiales que cumplen con el aislamiento acústico requerido.",
+      image1: require("assets/img/VIP/13. CAMPO DE TIRO TECHADO/Imagen15.png"),  
+      image2: require("assets/img/VIP/13. CAMPO DE TIRO TECHADO/Imagen16.png"), 
+      image3: require("assets/img/VIP/13. CAMPO DE TIRO TECHADO/Imagen17.png"), 
+      image4: require("assets/img/VIP/13. CAMPO DE TIRO TECHADO/Imagen18.png"), 
+      image5: require("assets/img/VIP/13. CAMPO DE TIRO TECHADO/Imagen19.png"), 
+      image6: require("assets/img/VIP/13. CAMPO DE TIRO TECHADO/Imagen20.png"),
+
+},
+{
+  Id: "4",
+  path: "/projects-2021/4",
+  title: "Torre de entrenamiento múltiple",
+  client: "---",
+  typeProject: "Anteproyecto y proyecto Arquitectónico.",
+  location: "---",
+  surface: "358.76 M2",
+  description:
+      "Se propone una torre de 15 metros de altura, con 6 entrepisos y una azotea "+ 
+      "destinada para actividades de entrenamiento, con una serie de aperturas "+
+      "dinámicas en las fachadas norte, sur y este. La finalidad de estas medidas "+
+      "es abrir o cubrir los vacios a través de muros movibles, adaptados según "+ 
+      "los requerimientos de las prácticas y simulando la forma de un edificion. "+  
+      "La fachada oeste se contempla con un muro ciego para la práctica de escalada.",
+      image1: require("assets/img/VIP/14. TORRE DE ENTRENAMIENTO/Imagen1.png"),  
+      image2: require("assets/img/VIP/14. TORRE DE ENTRENAMIENTO/Imagen2.png"), 
+      image3: require("assets/img/VIP/14. TORRE DE ENTRENAMIENTO/Imagen3.png"), 
+      image4: require("assets/img/VIP/14. TORRE DE ENTRENAMIENTO/Imagen4.png"), 
+      image5: require("assets/img/VIP/14. TORRE DE ENTRENAMIENTO/Imagen5.png"), 
+      image6: require("assets/img/VIP/14. TORRE DE ENTRENAMIENTO/Imagen6.png"),
+
+},
+{
+  Id: "5",
+  path: "/projects-2021/5",
+  title: "Torre de Dormitorio Escolar",
+  client: "---",
+  typeProject: "Anteproyecto y proyecto Arquitectónico.",
+  location: "---",
+  surface: "1001.79 M2",
+  description:
+      "Se realizó la propuesta de anteproyecto de un complejo escolar y el "+ 
+      "proyecto arquitectónico de un edificio de tres niveles destinados para "+
+      "dormitorios y baños con vestidores con una capacidad de hasta 1000 alumnos. "+
+      "Además se integraron aulas, sala de juntas, sala de maestros y aulas de "+ 
+      "posgrado en planta alta.",
+      image1: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen7.png"),  
+      image2: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen8.png"), 
+      image3: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen9.png"), 
+      image4: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen10.png"), 
+      image5: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen11.png"), 
+      image6: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen12.png"),
+      image7: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen13.png"), 
+      image8: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen14.png"),
+
+},
 ]
-function Projects2021() {
+function Projects2021(props) {
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const privateIndustry = ProjectsData.find(
+    (p) => p.path === currentPath
+  );
+
   //menu de hamburguesa cuando la resolucio cambia.
   const [pills, setPills] = React.useState("2");
   React.useEffect(() => {
@@ -114,25 +187,7 @@ function Projects2021() {
             <Col className="ml-auto mr-auto" md="6">
               <h4 className="title text-center">Galeria de Proyectos</h4>
               <div className="nav-align-center">
-                <Nav
-                  className="nav-pills-info nav-pills-just-icons"
-                  pills
-                  role="tablist"
-                >
                 
-                  <NavItem>
-                    <NavLink
-                      className={pills === "2" ? "active" : ""}
-                      href="#pablo"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setPills("2");
-                      }}
-                    >
-                      <i className="now-ui-icons design_image"></i>
-                    </NavLink>
-                  </NavItem>
-                </Nav>
               </div>
             </Col>
             {privateIndustry && (
@@ -153,29 +208,39 @@ function Projects2021() {
                       <img
                         alt="..."
                         className="img-raised"
-                        src={privateIndustry.image2}
+                        src={privateIndustry.image3}
                       ></img>
                        <img
                         alt="..."
                         className="img-raised"
-                        src={privateIndustry.image3}
+                        src={privateIndustry.image5}
+                      ></img>
+                      <img
+                        alt="..."
+                        className="img-raised"
+                        src={privateIndustry.image7}
                       ></img>
                     </Col>
                     <Col md="6">
                       <img
                         alt="..."
                         className="img-raised"
-                        src={privateIndustry.image4}
+                        src={privateIndustry.image2}
                       ></img>
                       <img
                         alt="..."
                         className="img-raised"
-                        src={privateIndustry.image5}
+                        src={privateIndustry.image4}
                       ></img>
                        <img
                         alt="..."
                         className="img-raised"
                         src={privateIndustry.image6}
+                      ></img>
+                      <img
+                        alt="..."
+                        className="img-raised"
+                        src={privateIndustry.image8}
                       ></img>
                     </Col>
                   </Row>

@@ -56,7 +56,10 @@ function IndexNavbar() {
                tag={Link}
               id="navbar-brand"
             >
-              Vip Ingeniería
+              <img
+                  alt="..."
+                  src={require("assets/img/VIP_logo.png")}
+                ></img> <p style={{color: "#36478A"}}>Vip Ingeniería S.A. DE C.V</p>
             </NavbarBrand>
             <button
               className="navbar-toggler navbar-toggler"
@@ -131,18 +134,18 @@ function IndexNavbar() {
                   <DropdownItem to="/projects-2021/5" tag={Link}>
                   Torre de dormitorio Escolar
                   </DropdownItem>
-                  
+
                   <h6 className="text-center">2022</h6>
-                  <DropdownItem to="/projects-2021" tag={Link}>
+                  <DropdownItem to="/projects-2022/1" tag={Link}>
                   Remodelación Oficina
                   </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
+                  <DropdownItem to="/projects-2022/2" tag={Link}>
                   Ludoteca
                   </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
+                  <DropdownItem to="/projects-2022/3" tag={Link}>
                   Mantenimiento Residencial
                   </DropdownItem>
-                  <DropdownItem to="/hospital" tag={Link}>
+                  <DropdownItem to="/projects-2022/4" tag={Link}>
                   Remodelación Roof Garden
                   </DropdownItem>
                 </DropdownMenu>

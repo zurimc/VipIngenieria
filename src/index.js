@@ -54,7 +54,27 @@ root.render(
          <Route
           path="/projects-2021/4"
           render={(props) => <Projects2021 {...props} />}
-        />   
+        />  
+        <Route
+          path="/projects-2021/5"
+          render={(props) => <Projects2021 {...props} />}
+        />
+         <Route
+          path="/projects-2022/1"
+          render={(props) => <Projects2022 {...props} />}
+        />  
+         <Route
+          path="/projects-2022/2"
+          render={(props) => <Projects2022 {...props} />}
+        />
+         <Route
+          path="/projects-2022/3"
+          render={(props) => <Projects2022 {...props} />}
+        />
+         <Route
+          path="/projects-2022/4"
+          render={(props) => <Projects2022 {...props} />}
+        />  
          <Route
           path="/contact-us"
           render={(props) => <ContactUs {...props} />}

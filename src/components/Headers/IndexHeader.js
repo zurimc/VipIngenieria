@@ -3,6 +3,7 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
+import { transform } from "typescript";
 // core components
 
 function IndexHeader() {
@@ -35,8 +36,11 @@ function IndexHeader() {
         <Container>
           <div className="content-center brand">
           
-            <h1 className="h1-seo">Vip Ingeniería.</h1>
-            <h3>Construya con VIP INGENIERÍA</h3>
+            <h1 className="h1-seo" style={{lineHeight: "4"}}>Construya y Diseñe con nosotros</h1>
+            <h4 style={{color: "#36478A", marginLeft:"200px" ,textAlign:"left", fontStyle: "italic", textShadow:"1.5", fontSize: "4em", fontWeight: "400", lineHeight: "0.5"}}>Diseño</h4>
+            <h4 style={{color: "#36478A", marginLeft:"240px" ,textAlign:"left", fontStyle: "italic", textShadow:"1.5", fontSize: "4em", fontWeight: "400", lineHeight: "0.5"}}>Supervisión</h4>
+            <h4 style={{color: "#36478A", marginLeft:"280px" ,textAlign:"left", fontStyle: "italic", textShadow:"1.5", fontSize: "4em", fontWeight: "400", lineHeight: "0.5"}}>Construcción</h4>
+            <h4 style={{color: "#36478A",  marginLeft:"320px" ,textAlign:"left", fontStyle: "italic", textShadow:"1.5", fontSize: "4em", fontWeight: "400", lineHeight: "0.5"}}>Y Mantenimiento</h4>
           </div>
        
         </Container>

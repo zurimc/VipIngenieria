@@ -31,7 +31,7 @@ function Index() {
           <Images />
           <Projects/>
           <Services/>
-          <Clients />
+          {/* <Clients /> */}
         </div>
         <DarkFooter />
       </div>

@@ -13,45 +13,51 @@ import {
 // core components
 
 const items = [
+ 
   {
-    src: require("assets/img/img1.jpg"),
-    altText: "Zona I",
-    caption: "Remodelación y mantenimiento"
+    src: require("assets/img/VIP/11. BIBLIOTECA ESCOLAR/Imagen7.png"),
+    altText: "Biblioteca Escolar",
+    caption: "Anteproyecto Arquitectónico"
   },
   {
-    src: require("assets/img/img3.jpg"),
-    altText: "Clínica temporal de tratamiento de COVID",
-    caption: "Proyecto"
+    src: require("assets/img/VIP/12. GIMNASIO ESCOLAR/Imagen15.png"),
+    altText: "Gimnasio Escolar",
+    caption: "Anteproyecto Arquitectónico"
   },
   {
-    src: require("assets/img/img4.jpg"),
-    altText: "SRE",
-    caption: "Remodelación"
+    src: require("assets/img/VIP/13. CAMPO DE TIRO TECHADO/Imagen21.png"),
+    altText: "Campo de Tiro Techado",
+    caption: "Anteproyecto Arquitectónico"
   },
   {
-    src: require("assets/img/img.jpg"),
-    altText: "Centro Migratorio de Tijuana",
-    caption: "Remodelación"
+    src: require("assets/img/VIP/14. TORRE DE ENTRENAMIENTO/Imagen7.png"),
+    altText: "Torre de entrenamiento múltiple",
+    caption: "Anteproyecto Arquitectónico"
   },
   {
-    src: require("assets/img/img2.jpg"),
-    altText: "Metro Zócalo",
-    caption: "Mantenimiento"
+    src: require("assets/img/VIP/15. TORRE DORMITORIO ESCOLAR/Imagen15.png"),
+    altText: "Torre de dormitorios Escolar",
+    caption: "Anteproyecto Arquitectónico"
   },
   {
-    src: require("assets/img/img5.jpg"),
-    altText: "Centro Migratorio de Mexicali",
-    caption: "Remodelación"
+    src: require("assets/img/VIP/22. REMODELACION OFICINA/3.jpg"),
+    altText: "Remodelación oficina",
+    caption: "Proyecto Arquitectónico"
   },
   {
-    src: require("assets/img/img6.jpg"),
-    altText: "Centro Migratorio Tenosique",
-    caption: "Remodelación"
+    src: require("assets/img/VIP/23. LUDOTECA/Imagen24.jpg"),
+    altText: "Ludoteca",
+    caption: "Proyecto Arquitectónico"
   },
   {
-    src: require("assets/img/img7.jpg"),
-    altText: "CENDI 'Rosario Castellanos'",
-    caption: "Mantenimiento"
+    src: require("assets/img/VIP/24. MANTENIMIENTO RESIDENCIAL/12.jpg"),
+    altText: "Mantenimiento residencial",
+    caption: "Proyecto Arquitectónico"
+  },
+  {
+    src: require("assets/img/VIP/25. REMODELACION ROOF GARDEN/13.jpg"),
+    altText: "Remodelacion Roof Garden",
+    caption: "Proyecto Arquitectónico"
   }
 ];
 
@@ -80,9 +86,9 @@ function Projects() {
   };
   return (
     <>
-      <div className="section" id="carousel">
+      <div  >
         <Container>
-            <h2 className="title">Conoce nuestros proyectos</h2>
+            <h2 className="title" style={{textAlign:"center"}}>Conoce nuestros proyectos</h2>
           <Row >
             <Col lg="12" md="12">
               <Carousel
@@ -102,8 +108,8 @@ function Projects() {
                       onExited={onExited}
                       key={item.src}
                     >
-                      <img src={item.src} alt={item.altText} />
-                      <div className="carousel-caption d-none d-md-block">
+                      <img className="category text-info" src={item.src} alt={item.altText} />
+                      <div className="carousel-caption description">
                         <h3>{item.altText}</h3>
                         <h5>{item.caption}</h5>
                       </div>
@@ -120,7 +126,7 @@ function Projects() {
                   }}
                   role="button"
                 >
-                  <i className="now-ui-icons arrows-1_minimal-left"></i>
+                  <i className="fa fa-angle-double-left fa-4x" style={{color: "#000"}}></i>
                 </a>
                 <a
                   className="carousel-control-next"
@@ -132,7 +138,7 @@ function Projects() {
                   }}
                   role="button"
                 >
-                  <i className="now-ui-icons arrows-1_minimal-right"></i>
+                  <i className="fa fa-angle-double-right fa-4x" style={{color: "#000"}}></i>
                 </a>
               </Carousel>
             </Col>

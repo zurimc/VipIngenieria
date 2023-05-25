@@ -93,6 +93,7 @@
 
         .hero-images-container{
             max-width: 500px;
+            border-radius: 8px; 
         }
 
         .hero-images-container-1{
@@ -236,12 +237,12 @@
     .image-container{
         &.image-right{
             top: 80px;
-            margin-left: - 100px;
-            margin-bottom: 130px;
+            margin-left: - 80px;
+            margin-bottom: 260px;
         }
 
         &.image-left{
-            margin-right: -100px;
+            margin-right: -80px;
         }
     }
 }
@@ -249,7 +250,7 @@
 @media screen and (max-width: 768px){
     .image-container{
         &.image-left{
-            margin-bottom: 220px;
+            margin-bottom: 120px;
 
             p.blockquote{
                 margin: 0 auto;
@@ -273,7 +274,7 @@
 
     .landing-page .section-story-overview .image-container:nth-child(2){
         margin-left: 0;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
     }
 }
 
@@ -329,6 +330,7 @@
 
         .hero-images-container{
             max-width: 380px;
+            border-radius: 8px;
         }
 
         .hero-images-container-1{
